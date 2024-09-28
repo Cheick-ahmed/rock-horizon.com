@@ -1,0 +1,73 @@
+<script setup lang="ts">
+import type { Project } from "~/models/project.models";
+
+defineProps<{
+  item: Project.Item;
+}>();
+</script>
+
+<template>
+  <div>
+    <div class="space-y-4">
+      <!-- Active: "border-indigo-600 ring-2 ring-indigo-600", Not Active: "border-gray-300" -->
+      <div
+        class="relative block cursor-pointer rounded-lg border bg-white px-6 py-4 shadow-sm focus:outline-none sm:flex sm:items-center sm:justify-between"
+      >
+        <span class="flex items-center">
+          <span class="flex flex-col text-sm">
+            <span class="font-extralight text-6xl text-slate-900">
+              {{ item.name }}
+            </span>
+            <span class="font-thin">
+              <!-- Taille de la villa -->
+              <span class="block sm:inline">{{ item.size }}</span>
+              <span
+                v-if="item.features.length > 0"
+                class="hidden sm:mx-2 sm:inline"
+                aria-hidden="true"
+                >&middot;</span
+              >
+
+              <!-- Boucle pour les features -->
+              <span
+                v-for="(feature, index) in item.features"
+                :key="feature.id"
+                class="block sm:inline"
+              >
+                <!-- Affichage avec ou sans barré selon la disponibilité -->
+                <span
+                  :class="{
+                    'line-through decoration-[#333333]': !feature.available,
+                  }"
+                >
+                  {{ feature.name }}
+                </span>
+                <span
+                  v-if="index < item.features.length - 1"
+                  class="hidden sm:mx-2 sm:inline"
+                  aria-hidden="true"
+                >
+                  &middot;
+                </span>
+              </span>
+            </span>
+          </span>
+        </span>
+        <span
+          class="mt-2 flex text-sm sm:ml-4 sm:mt-0 sm:flex-col sm:text-right"
+        >
+          <span class="font-medium text-neutral-900">{{ item.price }}</span>
+          <span class="ml-1 text-neutral-500 sm:ml-0">FCFA</span>
+        </span>
+        <!--
+        Active: "border", Not Active: "border-2"
+        Checked: "border-indigo-600", Not Checked: "border-transparent"
+      -->
+        <span
+          class="pointer-events-none absolute -inset-px rounded-lg border"
+          aria-hidden="true"
+        ></span>
+      </div>
+    </div>
+  </div>
+</template>
