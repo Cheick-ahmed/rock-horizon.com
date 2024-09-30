@@ -1,3 +1,3 @@
 <template>
-  <div>About page</div>
+  <Container class="h-screen py-32">About page</Container>
 </template>

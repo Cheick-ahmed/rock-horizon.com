@@ -5,9 +5,9 @@ const lastProject = getLastProject();
 </script>
 
 <template>
-  <div class="relative isolate my-10 sm:my-28 lg:my-0">
+  <div class="relative isolate my-4 sm:my-28 lg:my-0">
     <Container>
-      <div class="max-w-3xl sm:py-28">
+      <div class="max-w-3xl sm:py-20">
         <div class="hidden sm:mb-8 sm:flex">
           <div
             class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-sand hover:ring-sand"
@@ -15,7 +15,7 @@ const lastProject = getLastProject();
             Découvrez nos espaces inédits
             <NuxtLink
               :to="{ name: '' }"
-              class="font-base font-semibold text-sand-dark"
+              class="font-sans font-bold text-sand-dark"
             >
               <span class="absolute inset-0" aria-hidden="true"></span>
               En savoir plus
@@ -25,11 +25,11 @@ const lastProject = getLastProject();
         </div>
         <div>
           <h1
-            class="font-base text-6xl font-bold tracking-tight text-neutral-950 [text-wrap:balance] sm:text-8xl"
+            class="font-base text-6xl font-light tracking-tight text-neutral-950 [text-wrap:balance] sm:text-8xl"
           >
             Redéfinir le Luxe dans des Horizons Inexplorés.
           </h1>
-          <p class="mt-6 font-base text-xl font-extralight text-neutral-600">
+          <p class="mt-6 font-base text-xl font-extralight">
             Nous concevons des maisons élégantes et minimalistes, qui capturent
             l’essence de l’espace, de la sérénité et de l’innovation. Ancrées
             dans des paysages oubliés, nos créations offrent un luxe subtil, un

@@ -24,7 +24,7 @@ watch(
           >
             <span class="sr-only">Your Company</span>
 
-            <Logo class="-mt-2 h-8 w-auto" />
+            <Logo class="h-6 w-auto" />
           </NuxtLink>
 
           <div class="hidden lg:flex lg:gap-10">

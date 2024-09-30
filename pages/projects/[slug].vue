@@ -151,12 +151,12 @@ useHead({
         >
           <template #title>
             <span
-              class="block tracking-tight [text-wrap:balance] text-4xl font-medium sm:text-8xl text-neutral-950"
+              class="block [text-wrap:balance] text-4xl font-medium sm:text-7xl"
             >
               Villas Brumes
             </span>
           </template>
-          <p class="text-xl font-thin">
+          <p class="text-lg font-extralight">
             Une enclave privée de trois villas élégantes et minimalistes,
             nichées dans un cadre naturel inexploré. Chaque villa combine
             confort moderne et design intemporel, avec une attention
@@ -186,7 +186,7 @@ useHead({
           <SectionIntro class="max-w-5xl">
             <template #title>
               <span
-                class="block font-base font-thin [text-wrap:balance] text-5xl"
+                class="block font-base font-light [text-wrap:balance] text-5xl"
               >
                 Avec ses terrasses et ses espaces inondés de lumière, chaque
                 villa offre une sensation de liberté absolue, alliant luxe
@@ -197,7 +197,7 @@ useHead({
 
           <div class="mt-12">
             <div
-              class="grid grid-cols-1 gap-8 text-lg font-base leading-7 text-neutral-700 lg:grid-cols-2"
+              class="grid grid-cols-1 gap-8 text-lg font-base font-light text-neutral-700 lg:grid-cols-2"
             >
               <div>
                 <p>

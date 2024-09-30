@@ -146,7 +146,7 @@ useHead({
 
         <div>
           <div
-            class="grid max-w-xl grid-cols-1 gap-8 text-lg font-base leading-7 text-neutral-700 lg:max-w-none lg:grid-cols-2"
+            class="grid max-w-xl grid-cols-1 gap-8 text-lg font-base font-extralight lg:max-w-none lg:grid-cols-2"
           >
             <div>
               <p>
