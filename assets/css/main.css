@@ -47,7 +47,7 @@ html {
 
 @font-face {
   font-family: 'Futura';
-  src: url('../fonts/FuturaLight.ttf') format('truetype');
+  src: url('../fonts/Futura-Light.ttf') format('truetype');
   font-style: normal;
   font-weight: 100;
 }
