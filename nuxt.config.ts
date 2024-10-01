@@ -24,6 +24,18 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/image"],
+  modules: ["@nuxt/image", "@nuxtjs/sitemap", "@nuxtjs/robots"],
   compatibilityDate: "2024-09-28",
+
+  site: {
+    url: "https://www.rockhorizon.com/",
+    name: "Rock Horizon",
+  },
+
+  robots: {
+    allow: "*",
+    disallow: ["/404"],
+    sitemap: "https://rockhorizon.com/sitemap.xml",
+    blockNonSeoBots: true,
+  },
 });
