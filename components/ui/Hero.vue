@@ -7,7 +7,7 @@ const lastProject = getLastProject();
 <template>
   <div class="relative isolate my-4 sm:my-28 lg:my-0">
     <Container>
-      <div class="max-w-3xl sm:py-20">
+      <div class="max-w-3xl py-10 sm:py-20">
         <div class="hidden sm:mb-8 sm:flex">
           <div
             class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-sand hover:ring-sand"
