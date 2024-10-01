@@ -169,10 +169,17 @@ useHead({
     </Container>
 
     <div v-if="project" class="mb-16 sm:mb-0">
-      <Image
-        v-if="isMobile"
-        src="https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/toumodi/4.jpg"
-      ></Image>
+      <div v-if="isMobile">
+        <div class="aspect-h-9 aspect-w-16 w-full overflow-hidden">
+          <NuxtImg
+            format="webp"
+            loading="lazy"
+            src="https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/A_10.jpg"
+            class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+          >
+          </NuxtImg>
+        </div>
+      </div>
 
       <Image
         v-else
@@ -230,7 +237,7 @@ useHead({
           </div>
         </SectionBlock>
 
-        <div class="my-16 mb-32">
+        <div class="my-16 sm:mb-32">
           <h3>Détails</h3>
           <Border position="top" class="mt-2">
             <div class="pt-6">
@@ -278,7 +285,9 @@ useHead({
           </Border>
         </div>
 
-        <SectionBlock class="sm:pt-16">
+        <Gallerie />
+
+        <SectionBlock class="px-4 sm:px-0">
           <SectionIntro>
             <template #title>
               <span class="text-4xl [text-wrap:balance] sm:text-7xl font-[100]">
@@ -291,12 +300,6 @@ useHead({
           <Timeline class="mt-16"></Timeline>
         </SectionBlock>
       </Container>
-
-      <!-- <SectionBlock>
-        <Container>
-          <Gallerie />
-        </Container>
-      </SectionBlock> -->
     </template>
 
     <template v-else>

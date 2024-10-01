@@ -29,22 +29,7 @@ const images = [
 </script>
 
 <template>
-  <!-- <div>
-    <div class="mx-auto mt-16 flow-root max-w-2xl lg:mx-0 lg:max-w-none">
-      <div class="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
-        <div
-          v-for="image in images"
-          class="pt-8 sm:inline-block sm:w-full sm:px-4"
-        >
-          <Image :key="image.id" :src="image.imageUrl" />
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-  <div
-    class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8"
-  >
+  <div class="grid grid-cols-1 gap-y-4 sm:hidden">
     <NuxtLink
       v-for="image in images"
       :key="image.id"
@@ -52,7 +37,7 @@ const images = [
       class="group"
     >
       <div
-        class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md sm:aspect-h-3 sm:aspect-w-2"
+        class="aspect-h-3 aspect-w-2 w-full overflow-hidden sm:aspect-h-1 sm:aspect-w-1"
       >
         <img
           :src="image.imageUrl"

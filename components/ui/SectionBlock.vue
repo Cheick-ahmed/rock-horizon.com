@@ -3,7 +3,7 @@ import { cn } from "~/utils/cn";
 </script>
 
 <template>
-  <section :class="cn($props?.class as string | undefined, 'sm:py-32')">
+  <section :class="cn($props?.class as string | undefined, 'py-28 sm:py-32')">
     <slot />
   </section>
 </template>
