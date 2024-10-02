@@ -24,11 +24,10 @@ const resolvedProjectSlug = computed(() => {
   <article
     class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl font-base bg-neutral-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-96"
   >
-    <img
-      src="https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/toumodi/16-9/1_16-9.jpg"
-      alt=""
-      class="absolute inset-0 -z-10 h-full w-full object-cover"
-    />
+    <Image
+      :src="project.image"
+      class="absolute inset-0 -z-10 h-full w-full object-cover aspect-square"
+    ></Image>
     <div
       class="absolute inset-0 -z-10 bg-gradient-to-t from-neutral-900 via-neutral-900/40"
     ></div>

@@ -1,5 +1,23 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: "fr-FR",
+      },
+      link: [
+        {
+          rel: "alternate icon",
+          type: "image/png",
+          href: "/favicon.png",
+        },
+      ],
+    },
+    pageTransition: {
+      name: "page",
+      mode: "out-in",
+    },
+  },
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
 
@@ -16,13 +34,6 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
-
-  app: {
-    pageTransition: {
-      name: "page",
-      mode: "out-in",
-    },
-  },
 
   modules: ["@nuxt/image", "@nuxtjs/sitemap", "@nuxtjs/robots"],
   compatibilityDate: "2024-09-28",

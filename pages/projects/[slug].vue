@@ -22,6 +22,11 @@ const resolvedProjectSlug = computed(() => {
 
 const details: Project.Detail[] = [
   {
+    id: "326ca596-824d-4caa-837f-232cc3d4f2f6",
+    name: "Lieu",
+    value: "Toumodi",
+  },
+  {
     id: "b903af02-6f1a-4ee6-8a29-9548cc63b851",
     name: "Superficie totale (m²)",
     value: "1200",
@@ -116,15 +121,13 @@ useHead({
     },
     {
       property: "og:image",
-      content: "https://yourwebsite.com/path-to-villa-image.jpg", // Mettre l'image des Villas Brumes ici
+      content:
+        "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/toumodi/4.jpg",
     },
     {
       property: "og:url",
-      content: "https://yourwebsite.com/villas-brumes",
-    },
-    {
-      name: "twitter:card",
-      content: "summary_large_image",
+      content:
+        "https://rockhorizon.com/projects/ff361243-30f7-4935-b750-10ea1a7bd583",
     },
     {
       name: "twitter:title",
@@ -136,7 +139,12 @@ useHead({
         "Découvrez les Villas Brumes, un projet de trois villas modernes et élégantes nichées dans un cadre naturel préservé.",
     },
   ],
-  link: [{ rel: "canonical", href: "https://yourwebsite.com/villas-brumes" }],
+  link: [
+    {
+      rel: "canonical",
+      href: "https://rockhorizon.com/projects/ff361243-30f7-4935-b750-10ea1a7bd583",
+    },
+  ],
 });
 </script>
 
@@ -169,27 +177,22 @@ useHead({
     </Container>
 
     <div v-if="project" class="mb-16 sm:mb-0">
-      <div v-if="isMobile">
-        <div class="aspect-h-9 aspect-w-16 w-full overflow-hidden">
-          <NuxtImg
-            format="webp"
-            loading="lazy"
-            src="https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/A_10.jpg"
-            class="h-full w-full object-cover object-center lg:h-full lg:w-full"
-          >
-          </NuxtImg>
-        </div>
+      <div class="sm:hidden">
+        <Image
+          class="aspect-video"
+          src="https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/A_10.jpg"
+        ></Image>
       </div>
 
       <Image
-        v-else
+        class="aspect-video hidden sm:block"
         src="https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/toumodi/16-9/3_16-9.jpg"
       ></Image>
     </div>
 
     <template v-if="project">
       <Container class="sm:mb-20">
-        <SectionBlock class="sm:pb-16">
+        <SectionBlock class="py-0 sm:pb-16">
           <SectionIntro class="max-w-5xl">
             <template #title>
               <span
@@ -255,28 +258,32 @@ useHead({
       >
         <SwiperSlide>
           <Image
+            class="aspect-video"
             src="https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/toumodi/16-9/3_16-9.jpg"
           ></Image>
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            class="aspect-video"
             src="https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/toumodi/16-9/2_16-9.jpg"
           ></Image>
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            class="aspect-video"
             src="https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/toumodi/16-9/8_16-9.jpg"
           ></Image>
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            class="aspect-video"
             src="https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/toumodi/16-9/1_16-9.jpg"
           ></Image>
         </SwiperSlide>
       </SwiperWrapper>
 
       <Container>
-        <div class="my-24 mb-32">
+        <div>
           <h3>Présentation des Villas</h3>
           <Border position="top" class="mt-2">
             <div class="pt-6 space-y-4">
@@ -285,9 +292,9 @@ useHead({
           </Border>
         </div>
 
-        <Gallerie />
+        <Gallerie class="my-20" />
 
-        <SectionBlock class="px-4 sm:px-0">
+        <SectionBlock class="py-0 px-4 sm:px-0">
           <SectionIntro>
             <template #title>
               <span class="text-4xl [text-wrap:balance] sm:text-7xl font-[100]">

@@ -7,19 +7,18 @@ defineProps<{
 </script>
 
 <template>
-  <div>
-    <div class="space-y-4">
+  <div class="font-base">
+    <div class="space-y-8 group">
       <!-- Active: "border-indigo-600 ring-2 ring-indigo-600", Not Active: "border-gray-300" -->
       <div
-        class="relative block cursor-pointer rounded-lg border bg-white px-6 py-4 shadow-sm focus:outline-none sm:flex sm:items-center sm:justify-between"
+        class="relative block cursor-pointer transition-all group-hover:shadow-md rounded-lg border bg-white px-6 py-4 shadow-sm focus:outline-none sm:flex sm:items-center sm:justify-between"
       >
-        <span class="flex items-center">
+        <span class="flex items-center space-y-4">
           <span class="flex flex-col text-sm">
             <span class="font-extralight text-6xl text-slate-900">
               {{ item.name }}
             </span>
             <span class="font-thin">
-              <!-- Taille de la villa -->
               <span class="block sm:inline">{{ item.size }}</span>
               <span
                 v-if="item.features.length > 0"
@@ -28,13 +27,11 @@ defineProps<{
                 >&middot;</span
               >
 
-              <!-- Boucle pour les features -->
               <span
                 v-for="(feature, index) in item.features"
                 :key="feature.id"
                 class="block sm:inline"
               >
-                <!-- Affichage avec ou sans barré selon la disponibilité -->
                 <span
                   :class="{
                     'line-through decoration-[#333333]': !feature.available,

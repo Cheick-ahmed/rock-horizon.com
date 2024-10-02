@@ -10,13 +10,10 @@ const lastProject = getLastProject();
       <div class="max-w-3xl py-10 sm:py-20">
         <div class="hidden sm:mb-8 sm:flex">
           <div
-            class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-sand hover:ring-sand"
+            class="relative font-base rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-sand hover:ring-sand"
           >
-            Découvrez nos espaces inédits
-            <NuxtLink
-              :to="{ name: '' }"
-              class="font-sans font-bold text-sand-dark"
-            >
+            Découvrez nos espaces inédits.
+            <NuxtLink :to="{ name: '' }" class="ml-px font-bold text-sand-dark">
               <span class="absolute inset-0" aria-hidden="true"></span>
               En savoir plus
               <span aria-hidden="true">&rarr;</span>
@@ -47,7 +44,7 @@ const lastProject = getLastProject();
             >
               Explorez Nos Projets
             </Button>
-            <Button variant="outline" to="about">En savoir plus</Button>
+            <Button variant="outline" to="">En savoir plus</Button>
           </div>
         </div>
       </div>

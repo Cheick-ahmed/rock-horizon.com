@@ -37,6 +37,9 @@ export default {
           dark: '#C49A2C',   
         },
       },
+      aspectRatio: {
+        '4/3': '4 / 3',
+      },
     },
     fontFamily: {
       sans: ['Mona Sans', ...defaultTheme.fontFamily.sans],
