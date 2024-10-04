@@ -5,6 +5,13 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "fr-FR",
       },
+      meta: [
+        {
+          name: "ahrefs-site-verification",
+          content:
+            "945598cbc7bdf306712dedd9c2afadea4ef5da6288cbf586e5b746f991d6042c",
+        },
+      ],
       link: [
         {
           rel: "alternate icon",
