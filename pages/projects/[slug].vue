@@ -98,7 +98,8 @@ watch(
 );
 
 useHead({
-  title: "Villas Brumes | Villas Modernes et Exclusives en Côte d'Ivoire",
+  title: "Villas Brumes : Villas Exclusives et Modernes en Côte d'Ivoire",
+  titleTemplate: "",
   meta: [
     {
       name: "description",
@@ -156,6 +157,7 @@ useHead({
           v-if="project"
           class="py-20 col-span-full max-w-3xl font-base"
           eyebrow="Projet"
+          as="h1"
         >
           <template #title>
             <span

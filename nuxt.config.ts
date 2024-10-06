@@ -3,8 +3,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: {
-        lang: "fr-FR",
+        lang: "fr",
       },
+      titleTemplate: "Rock Horizon | %s",
       meta: [
         {
           name: "ahrefs-site-verification",
@@ -14,7 +15,7 @@ export default defineNuxtConfig({
       ],
       link: [
         {
-          rel: "alternate icon",
+          rel: "icon",
           type: "image/png",
           href: "/favicon.png",
         },
@@ -48,6 +49,7 @@ export default defineNuxtConfig({
   site: {
     url: "https://www.rockhorizon.com/",
     name: "Rock Horizon",
+    xsl: false,
   },
 
   robots: {

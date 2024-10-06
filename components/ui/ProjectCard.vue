@@ -26,10 +26,10 @@ const resolvedProjectSlug = computed(() => {
   >
     <Image
       :src="project.image"
-      class="absolute inset-0 -z-10 h-full w-full object-cover aspect-square"
+      class="absolute inset-0 -z-10 h-full w-full object-cover"
     ></Image>
     <div
-      class="absolute inset-0 -z-10 bg-gradient-to-t from-neutral-900 via-neutral-900/40"
+      class="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/40"
     ></div>
     <div
       class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-neutral-900/10"
@@ -55,15 +55,14 @@ const resolvedProjectSlug = computed(() => {
     <h3 class="mt-3 text-4xl font-light text-white">
       <NuxtLink
         :to="{
-          name: 'projects-slug',
-          params: { slug: resolvedProjectSlug },
+          name: 'projects',
         }"
       >
         <span class="absolute inset-0"></span>
         {{ project.name }}
       </NuxtLink>
     </h3>
-    <p v-if="project.description" class="mt-2 text-neutral-400">
+    <p v-if="project.description" class="mt-2 text-neutral-300">
       {{ project.description }}
     </p>
   </article>

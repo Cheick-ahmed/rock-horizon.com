@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import SwiperWrapper from "~/components/ui/Swiper/Wrapper.vue";
 import SwiperSlide from "~/components/ui/Swiper/Slide.vue";
+
 const services = [
   {
     id: "9621a11a-87a5-4bfb-b937-d4e92fb2598f",
@@ -44,16 +45,16 @@ const projects = [
   {
     id: "67fdc786-33c2-4ab9-866d-caa6ed2a1e7a",
     image: "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/A_10.jpg",
-    name: "Résidence Horizon",
-    status: "A venir",
+    name: "Résidences et Immeubles",
+    description:
+      "Des résidences multifonctionnelles, alliant modernité et investissement durable.",
   },
   {
     id: "e3e7897d-9ab8-4cd7-a297-4b7969a848a9",
     image: "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/A_3.jpg",
-    name: "Villas Brumes",
-    status: "En cours",
+    name: "Villas",
     description:
-      "Un programme immobilier qui réinvente l’intimité et le raffinement, au cœur de paysages sublimes et oubliés.",
+      "Des espaces raffinés et lumineux, où sérénité et confort s'unissent dans des villas exclusives.",
   },
   {
     id: "9d802347-8d9a-4bd9-be22-9e1814308985",
@@ -80,13 +81,12 @@ const carouselOptions = {
 };
 
 useHead({
-  title:
-    "Rock-Horizon | Architecture Minimaliste et Immobilier Visionnaire en Côte d'Ivoire",
+  title: "Villas Minimalistes et Projets Innovants en Afrique",
   meta: [
     {
       name: "description",
       content:
-        "Découvrez Rock-Horizon, expert en architecture minimaliste et conception de maisons modernes et élégantes dans des lieux inexplorés. Des projets immobiliers uniques, où innovation et raffinement se rencontrent.",
+        "Découvrez Rock Horizon, expert en architecture minimaliste et conception de maisons modernes et élégantes dans des lieux inexplorés. Des projets immobiliers uniques, où innovation et raffinement se rencontrent.",
     },
     {
       name: "keywords",
@@ -126,7 +126,7 @@ useHead({
         "Rock-Horizon conçoit des maisons élégantes et modernes dans des lieux inexplorés. Découvrez nos projets immobiliers exclusifs.",
     },
   ],
-  link: [{ rel: "canonical", href: "https://rock-horizon.com" }],
+  link: [{ rel: "canonical", href: "https://rockhorizon.com" }],
 });
 </script>
 
@@ -150,14 +150,14 @@ useHead({
           >
             <div>
               <p>
-                Chez <span class="font-medium">Rock-Horizon</span>, nous ne
-                faisons pas que construire des maisons, nous redéfinissons
-                l'expérience de l'habitat. Nous croyons que le véritable art de
-                bâtir consiste à anticiper les besoins de demain, en
-                transformant des lieux inattendus en opportunités de valeur
-                ajoutée. Là où d'autres voient des terres éloignées, nous voyons
-                un potentiel inexploité, des projets d'envergure qui redessinent
-                les contours du marché immobilier.
+                Chez <span class="font-medium">Rock Horizon</span>, nous offrons
+                des solutions pour acheter une maison en Côte d'Ivoire adaptée
+                aux besoins. Nous croyons que le véritable art de bâtir consiste
+                à anticiper les besoins de demain, en transformant des lieux
+                inattendus en opportunités de valeur ajoutée. Là où d'autres
+                voient des terres éloignées, nous voyons un potentiel
+                inexploité, des projets d'envergure qui redessinent les contours
+                du marché immobilier.
               </p>
               <p class="mt-8">
                 Notre vision est audacieuse : investir dans des zones
@@ -165,7 +165,8 @@ useHead({
                 iconiques qui allient élégance discrète, confort moderne, et
                 durabilité. Nos projets se démarquent par leur capacité à se
                 fondre harmonieusement dans leur environnement naturel, tout en
-                offrant des prestations exclusives et innovantes.
+                offrant une vision unique de l'immobilier en Côte d'Ivoire, avec
+                des propriétés audacieuses.
               </p>
             </div>
             <div>
