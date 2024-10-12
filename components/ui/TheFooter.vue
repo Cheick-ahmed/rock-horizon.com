@@ -2,7 +2,10 @@
   <footer class="bg-white ring-1 ring-neutral-50 shadow-xl">
     <Container class="py-12 md:flex md:items-center md:justify-between">
       <div class="flex justify-center space-x-6 md:order-2">
-        <NuxtLink :to="{ name: '' }" class="text-sand hover:text-sand-dark">
+        <NuxtLink
+          :to="{ name: '' }"
+          class="text-neutral-950 hover:text-neutral-950"
+        >
           <span class="sr-only">Facebook</span>
           <svg
             class="h-6 w-6"
@@ -17,7 +20,10 @@
             />
           </svg>
         </NuxtLink>
-        <NuxtLink :to="{ name: '' }" class="text-sand hover:text-sand-dark">
+        <NuxtLink
+          :to="{ name: '' }"
+          class="text-neutral-950 hover:text-neutral-950"
+        >
           <span class="sr-only">Instagram</span>
           <svg
             class="h-6 w-6"
@@ -32,7 +38,10 @@
             />
           </svg>
         </NuxtLink>
-        <NuxtLink :to="{ name: '' }" class="text-sand hover:text-sand-dark">
+        <NuxtLink
+          :to="{ name: '' }"
+          class="text-neutral-950 hover:text-neutral-950"
+        >
           <span class="sr-only">X</span>
           <svg
             class="h-6 w-6"
@@ -45,7 +54,10 @@
             />
           </svg>
         </NuxtLink>
-        <NuxtLink :to="{ name: '' }" class="text-sand hover:text-sand-dark">
+        <NuxtLink
+          :to="{ name: '' }"
+          class="text-neutral-950 hover:text-neutral-950"
+        >
           <span class="sr-only">YouTube</span>
           <svg
             class="h-6 w-6"
@@ -62,7 +74,7 @@
         </NuxtLink>
       </div>
       <div class="mt-8 md:order-1 md:mt-0">
-        <p class="text-center text-xs leading-5 text-slate-500">
+        <p class="text-center text-sm leading-5 text-neutral-600">
           &copy; 2024 Rock Horizon, Tous droits réservés.
         </p>
       </div>

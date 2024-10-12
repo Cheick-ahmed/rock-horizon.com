@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const Links = [
+  { label: "Nos projets", name: "" },
   { label: "A propos", name: "" },
-  { label: "Programmes", name: "" },
 ];
 
 const hoveredIndex = ref<number | null>(null);

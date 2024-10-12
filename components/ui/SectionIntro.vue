@@ -6,21 +6,21 @@ defineProps<{
   eyebrow?: Boolean | String;
   smaller?: Boolean;
   centered?: Boolean;
-  as?: HtmlElement;
+  as?: string;
 }>();
 </script>
 
 <template>
   <div
-    :class="cn(centered && 'lg:mx-auto lg:text-center', 'max-w-3xl',$attrs?.class as string | undefined)"
+    :class="cn(centered && 'lg:mx-auto lg:text-center', 'font-base max-w-3xl', $attrs?.class as string | undefined)"
   >
+    <template v-if="eyebrow">
+      <span class="mb-6 text-[11px] uppercase font-light text-[#28242B]">
+        {{ eyebrow }}
+      </span>
+      <span class="sr-only"> - </span>
+    </template>
     <component :is="as || 'h2'">
-      <template v-if="eyebrow">
-        <span class="mb-6 text-xs uppercase font-light text-sand-dark">
-          {{ eyebrow }}
-        </span>
-        <span class="sr-only"> - </span>
-      </template>
       <slot name="title">
         <span
           v-html="title"

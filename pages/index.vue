@@ -51,10 +51,12 @@ const projects = [
   },
   {
     id: "e3e7897d-9ab8-4cd7-a297-4b7969a848a9",
-    image: "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/A_3.jpg",
+    image:
+      "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/toumodi/4.jpg",
     name: "Villas",
     description:
       "Des espaces raffinés et lumineux, où sérénité et confort s'unissent dans des villas exclusives.",
+    slug: "villas",
   },
   {
     id: "9d802347-8d9a-4bd9-be22-9e1814308985",
@@ -138,79 +140,87 @@ useHead({
       class="bg-gradient-to-b from-white from-50% to-neutral-100 py-32"
     >
       <Container>
-        <SectionIntro
-          eyebrow="Notre vision"
-          title="Repenser l'Architecture, Transformer l’Immobilier."
-        >
+        <SectionIntro eyebrow="Notre vision" class="max-w-5xl">
+          <template #title>
+            <span
+              class="mt-2 uppercase text-xl block [text-wrap:balance] lg:text-7xl font-extralight"
+            >
+              Repenser l’espace, réinventer l’immobilier.
+            </span>
+          </template>
         </SectionIntro>
 
-        <div>
+        <div class="mt-8">
           <div
             class="grid max-w-xl grid-cols-1 gap-8 text-lg font-base font-extralight lg:max-w-none lg:grid-cols-2"
           >
             <div>
               <p>
                 Chez <span class="font-medium">Rock Horizon</span>, nous offrons
-                des solutions pour acheter une maison en Côte d'Ivoire adaptée
-                aux besoins. Nous croyons que le véritable art de bâtir consiste
-                à anticiper les besoins de demain, en transformant des lieux
-                inattendus en opportunités de valeur ajoutée. Là où d'autres
-                voient des terres éloignées, nous voyons un potentiel
-                inexploité, des projets d'envergure qui redessinent les contours
-                du marché immobilier.
+                des solutions sur mesure pour l'achat de maisons en Côte
+                d'Ivoire, adaptées aux besoins contemporains. Nous croyons que
+                le véritable art de bâtir consiste à anticiper les besoins de
+                demain, en transformant des lieux inattendus en opportunités de
+                valeur ajoutée. Là où d'autres voient des terres éloignées, nous
+                voyons un potentiel inexploité, des projets d'envergure qui
+                redessinent les contours du marché immobilier.
               </p>
               <p class="mt-8">
                 Notre vision est audacieuse : investir dans des zones
                 émergentes, loin des villes saturées, pour créer des propriétés
-                iconiques qui allient élégance discrète, confort moderne, et
-                durabilité. Nos projets se démarquent par leur capacité à se
-                fondre harmonieusement dans leur environnement naturel, tout en
-                offrant une vision unique de l'immobilier en Côte d'Ivoire, avec
-                des propriétés audacieuses.
+                iconiques alliant élégance discrète, confort moderne et
+                durabilité. Nos projets se distinguent par leur capacité à
+                s'intégrer harmonieusement dans leur environnement naturel,
+                offrant une perspective unique sur l'immobilier en Côte
+                d'Ivoire.
               </p>
             </div>
             <div>
               <p>
-                En apportant notre expertise et notre engagement pour des
-                constructions raffinées, nous donnons vie à des espaces qui
-                augmentent la valeur des territoires sous-estimés. Chaque projet
-                Rock-Horizon est conçu pour attirer une clientèle exigeante, à
-                la recherche d’une expérience résidentielle unique et accessible
-                à la fois. Nous faisons le pari d’un immobilier qui ne se
-                contente pas d’exister, mais qui transforme.
+                Avec notre expertise et notre engagement pour des constructions
+                raffinées, nous donnons vie à des espaces qui augmentent la
+                valeur des territoires sous-estimés. Chaque projet Rock Horizon
+                est conçu pour séduire une clientèle exigeante, à la recherche
+                d’une expérience résidentielle unique et accessible. Nous
+                faisons le pari d’un immobilier qui ne se contente pas
+                d’exister, mais qui transforme.
               </p>
               <p class="mt-8">
-                Nous choisissons des terrains "loins" des centres urbains pour
-                bâtir des sanctuaires modernes, où la rentabilité et la vision à
-                long terme se conjuguent. Notre approche allie rigueur dans la
+                Nous choisissons des terrains éloignés des centres urbains pour
+                bâtir des sanctuaires modernes où rentabilité et vision à long
+                terme se conjuguent. Notre approche allie rigueur dans la
                 gestion des coûts et innovation dans le design, pour offrir un
-                produit final qui inspire et séduit.”
+                produit final qui inspire et séduit.
               </p>
             </div>
           </div>
           <div class="mt-10 flex">
             <Button as="NuxtLink" to="about" variant="outline">
-              En savoir plus <span class="ml-1" aria-hidden="true">→</span>
+              A propos de nous <span class="ml-1" aria-hidden="true">→</span>
             </Button>
           </div>
         </div>
       </Container>
     </SectionBlock>
 
-    <SectionBlock class="relative isolate">
+    <SectionBlock>
       <Container>
-        <SectionIntro
-          eyebrow="Nos projets"
-          title="Des projets qui changent l’horizon"
-        >
+        <SectionIntro eyebrow="Nos projets">
+          <template #title>
+            <span
+              class="mt-2 uppercase block text-xl [text-wrap:balance] lg:text-7xl font-extralight"
+            >
+              Des projets qui changent l’horizon.
+            </span>
+          </template>
         </SectionIntro>
       </Container>
-      <div class="mx-auto max-w-[82rem] px-6">
+      <div class="lg:mx-auto lg:max-w-[82rem] lg:px-6">
         <div
           class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 lg:mx-0 sm:max-w-none lg:grid-cols-2"
         >
-          <ProjectCard :project="projects[0]" />
-          <ProjectCard :project="projects[1]" />
+          <ProjectCard :project="projects[0]" to="" />
+          <ProjectCard :project="projects[1]" to="projects/villas" />
         </div>
       </div>
     </SectionBlock>

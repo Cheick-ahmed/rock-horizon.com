@@ -82,36 +82,26 @@ watch(
                 class="fixed inset-0 z-0 bg-neutral-300/60 backdrop-blur"
               />
               <div
-                class="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-neutral-50 px-6 pb-6 pt-32 shadow-2xl shadow-neutral-900/20"
+                class="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-neutral-50 px-4 pb-6 pt-24 shadow-2xl shadow-neutral-900/20"
               >
                 <div class="space-y-4">
                   <NuxtLink
                     :to="{ name: '' }"
                     class="block text-base leading-7 tracking-tight text-gray-700"
                   >
-                    Programmes
+                    Nos projets
                   </NuxtLink>
                   <NuxtLink
-                    :to="{ name: '' }"
+                    :to="{ name: 'about' }"
                     class="block text-base leading-7 tracking-tight text-gray-700"
                   >
                     A propos
                   </NuxtLink>
                 </div>
-                <div class="mt-8 flex flex-col gap-4">
-                  <Button variant="outline" color="neutral">
-                    Nous contacter
-                  </Button>
-                </div>
               </div>
             </template>
           </div>
-          <Button
-            href="/login"
-            variant="solid"
-            color="base"
-            class="hidden lg:block"
-          >
+          <Button variant="solid" color="base" class="hidden lg:block">
             Nous contacter
           </Button>
         </div>

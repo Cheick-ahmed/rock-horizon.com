@@ -13,7 +13,10 @@ const lastProject = getLastProject();
             class="relative font-base rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-sand hover:ring-sand"
           >
             Découvrez nos espaces inédits.
-            <NuxtLink :to="{ name: '' }" class="ml-px font-bold text-sand-dark">
+            <NuxtLink
+              :to="{ name: 'about' }"
+              class="ml-px font-bold text-sand-dark"
+            >
               <span class="absolute inset-0" aria-hidden="true"></span>
               En savoir plus
               <span aria-hidden="true">&rarr;</span>
@@ -37,14 +40,13 @@ const lastProject = getLastProject();
           >
             <Button
               :to="{
-                name: 'projects-slug',
-                params: { slug: lastProject?.id },
+                name: 'projects-villas',
               }"
               color="base"
             >
               Explorez Nos Projets
             </Button>
-            <Button variant="outline" to="">En savoir plus</Button>
+            <Button variant="outline" to="about">En savoir plus</Button>
           </div>
         </div>
       </div>

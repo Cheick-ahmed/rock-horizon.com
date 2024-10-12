@@ -9,6 +9,7 @@ interface ProjectModel {
 
 const props = defineProps<{
   project: ProjectModel;
+  to: string;
 }>();
 
 const resolvedProjectSlug = computed(() => {
@@ -18,11 +19,18 @@ const resolvedProjectSlug = computed(() => {
 
   return "-";
 });
+
+const resolveRoutePath = computed(() => {
+  if (props.to && typeof props.to === "object") {
+    return { to: { name: props.to.name, params: props.to.params || {} } };
+  }
+  return { to: props.to };
+});
 </script>
 
 <template>
   <article
-    class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl font-base bg-neutral-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-96"
+    class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl font-base bg-neutral-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-[30rem]"
   >
     <Image
       :src="project.image"
@@ -32,7 +40,7 @@ const resolvedProjectSlug = computed(() => {
       class="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/40"
     ></div>
     <div
-      class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-neutral-900/10"
+      class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-black-900/10"
     ></div>
 
     <div
@@ -53,11 +61,7 @@ const resolvedProjectSlug = computed(() => {
       </div>
     </div>
     <h3 class="mt-3 text-4xl font-light text-white">
-      <NuxtLink
-        :to="{
-          name: 'projects',
-        }"
-      >
+      <NuxtLink v-bind="resolveRoutePath">
         <span class="absolute inset-0"></span>
         {{ project.name }}
       </NuxtLink>
