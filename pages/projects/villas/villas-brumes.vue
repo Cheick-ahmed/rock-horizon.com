@@ -28,7 +28,7 @@ const villas: Project.Item[] = [
   {
     id: "23355433-d9c9-4802-989e-711708a21e89",
     name: "Villa B360",
-    size: "358m²",
+    size: "165,28m²",
     features: [
       {
         id: "8f9a009a-d9b0-414d-9efa-8d4ff2a6dd63",
@@ -52,7 +52,7 @@ const villas: Project.Item[] = [
   {
     id: "9f6cd613-8614-429b-a65e-fabaa0437347",
     name: "Villa B330-P",
-    size: "328m²",
+    size: "165,28m²",
     features: [
       {
         id: "247cc737-9b53-46f6-a164-3ffda235a324",
@@ -121,7 +121,7 @@ useHead({
   link: [
     {
       rel: "canonical",
-      href: "https://rockhorizon.com/projects/ff361243-30f7-4935-b750-10ea1a7bd583",
+      href: "https://www.rockhorizon.com/projects/villas/villas-brumes",
     },
   ],
 });

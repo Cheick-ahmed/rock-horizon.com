@@ -9,13 +9,12 @@ defineProps<{
 <template>
   <div class="font-base">
     <div class="space-y-8 group">
-      <!-- Active: "border-indigo-600 ring-2 ring-indigo-600", Not Active: "border-gray-300" -->
       <div
         class="relative block cursor-pointer transition-all group-hover:shadow-md rounded-lg border bg-white px-6 py-4 shadow-sm focus:outline-none sm:flex sm:items-center sm:justify-between"
       >
         <span class="flex items-center space-y-4">
           <span class="flex flex-col text-sm">
-            <span class="font-extralight text-6xl text-slate-900">
+            <span class="text-3xl font-extralight lg:text-6xl text-slate-900">
               {{ item.name }}
             </span>
             <span class="font-thin">
@@ -56,10 +55,7 @@ defineProps<{
           <span class="font-medium text-neutral-900">{{ item.price }}</span>
           <span class="ml-1 text-neutral-500 sm:ml-0">FCFA</span>
         </span>
-        <!--
-        Active: "border", Not Active: "border-2"
-        Checked: "border-indigo-600", Not Checked: "border-transparent"
-      -->
+
         <span
           class="pointer-events-none absolute -inset-px rounded-lg border"
           aria-hidden="true"

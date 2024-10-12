@@ -4,6 +4,10 @@ import SwiperSlide from "~/components/ui/Swiper/Slide.vue";
 
 const { isMobile } = useBreakpoints();
 
+useHead({
+  title: "Nos villas",
+});
+
 const projects = computed(() => {
   return [
     {

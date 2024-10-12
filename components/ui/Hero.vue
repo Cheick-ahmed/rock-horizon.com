@@ -25,7 +25,7 @@ const lastProject = getLastProject();
         </div>
         <div>
           <h1
-            class="font-base text-6xl font-light tracking-tight text-neutral-950 [text-wrap:balance] sm:text-8xl"
+            class="font-base text-6xl font-light tracking-tight text-neutral-950 [text-wrap:balance] lg:text-8xl lg:max-w-2xl"
           >
             Redéfinir le Luxe dans des Horizons Inexplorés.
           </h1>
