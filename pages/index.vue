@@ -44,7 +44,8 @@ const services = [
 const projects = [
   {
     id: "67fdc786-33c2-4ab9-866d-caa6ed2a1e7a",
-    image: "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/A_10.jpg",
+    image:
+      "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/residence_horizon/RH_EXT_3.jpg",
     name: "Résidences et Immeubles",
     description:
       "Des résidences multifonctionnelles, alliant modernité et investissement durable.",
@@ -88,7 +89,7 @@ useHead({
     {
       name: "description",
       content:
-        "Découvrez Rock Horizon, expert en architecture minimaliste et conception de maisons modernes et élégantes dans des lieux inexplorés. Des projets immobiliers uniques, où innovation et raffinement se rencontrent.",
+        "Découvrez Rock Horizon, créateur de villas de luxe à l'architecture minimaliste en Côte d'Ivoire. Qualité, transparence, et satisfaction client sont au cœur de nos valeurs.",
     },
     {
       name: "keywords",
@@ -106,16 +107,8 @@ useHead({
         "Rock-Horizon conçoit des maisons élégantes et modernes dans des lieux inexplorés. Découvrez nos projets immobiliers exclusifs.",
     },
     {
-      property: "og:image",
-      content: "https://rock-horizon.com/path-to-image.jpg",
-    },
-    {
       property: "og:url",
       content: "https://rock-horizon.com",
-    },
-    {
-      name: "twitter:card",
-      content: "summary_large_image",
     },
     {
       name: "twitter:title",
@@ -130,6 +123,10 @@ useHead({
   ],
   link: [{ rel: "canonical", href: "https://rockhorizon.com" }],
 });
+
+defineWebPage({
+  "@type": "WebPage",
+});
 </script>
 
 <template>
@@ -140,10 +137,10 @@ useHead({
       class="bg-gradient-to-b from-white from-50% to-neutral-100 py-32"
     >
       <Container>
-        <SectionIntro eyebrow="Notre vision" class="max-w-5xl">
+        <SectionIntro eyebrow="Notre vision" class="max-w-6xl">
           <template #title>
             <span
-              class="mt-2 uppercase text-xl block [text-wrap:balance] lg:text-7xl font-extralight"
+              class="mt-2 uppercase text-xl font-extralight block [text-wrap:balance] lg:text-6xl lg:max-w-2xl"
             >
               Repenser l’espace, réinventer l’immobilier.
             </span>
@@ -208,7 +205,7 @@ useHead({
         <SectionIntro eyebrow="Nos projets">
           <template #title>
             <span
-              class="mt-2 uppercase block text-xl [text-wrap:balance] lg:text-7xl font-extralight"
+              class="mt-2 uppercase text-xl font-extralight block [text-wrap:balance] lg:text-6xl lg:max-w-lg"
             >
               Des projets qui changent l’horizon.
             </span>
@@ -217,10 +214,18 @@ useHead({
       </Container>
       <div class="lg:mx-auto lg:max-w-[82rem] lg:px-6">
         <div
-          class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 lg:mx-0 sm:max-w-none lg:grid-cols-2"
+          class="px-1 mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 lg:mx-0 sm:max-w-none gap-4 sm:mt-16 lg:grid-cols-8"
         >
-          <ProjectCard :project="projects[0]" to="" />
-          <ProjectCard :project="projects[1]" to="projects/villas" />
+          <ProjectCard
+            class="flex p-px lg:col-span-5"
+            :project="projects[0]"
+            to=""
+          />
+          <ProjectCard
+            class="flex p-px lg:col-span-3"
+            :project="projects[1]"
+            to="projects/villas"
+          />
         </div>
       </div>
     </SectionBlock>

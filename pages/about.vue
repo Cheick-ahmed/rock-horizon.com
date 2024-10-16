@@ -1,6 +1,30 @@
 <script setup lang="ts">
-useSeoMeta({
+useHead({
   title: "A propos de nous",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Découvrez Rock Horizon, créateur de villas de luxe à l'architecture minimaliste en Côte d'Ivoire. Qualité, transparence, et satisfaction client sont au cœur de nos valeurs.",
+    },
+    {
+      property: "og:title",
+      content: "Rock-Horizon | A propos de nous",
+    },
+    {
+      property: "og:description",
+      content: "",
+    },
+    {
+      property: "og:url",
+      content: "https://rock-horizon.com/about",
+    },
+  ],
+  link: [{ rel: "canonical", href: "https://rockhorizon.com/about" }],
+});
+
+defineWebPage({
+  "@type": "WebPage",
 });
 </script>
 

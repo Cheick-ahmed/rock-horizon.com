@@ -13,10 +13,10 @@ defineProps<{
       :key="detail.id"
       class="flex flex-col gap-y-1"
     >
-      <dt class="text-xs leading-7 uppercase text-neutral-600 font-extralight">
+      <dt class="text-[12px] uppercase text-neutral-600 font-thin">
         {{ detail.name }}
       </dt>
-      <dd class="text-lg font-light tracking-tight text-neutral-900 sm:text-xl">
+      <dd class="text-lg font-thin tracking-tight text-neutral-900 sm:text-xl">
         {{ detail.value }}
       </dd>
     </div>

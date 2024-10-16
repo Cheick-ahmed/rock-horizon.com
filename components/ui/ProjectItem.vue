@@ -14,7 +14,7 @@ defineProps<{
       >
         <span class="flex items-center space-y-4">
           <span class="flex flex-col text-sm">
-            <span class="text-3xl font-extralight lg:text-6xl text-slate-900">
+            <span class="text-3xl font-extralight lg:text-5xl text-slate-900">
               {{ item.name }}
             </span>
             <span class="font-thin">

@@ -123,7 +123,7 @@ const initSwiper = () => {
     options.modules?.push(Autoplay);
 
     options["autoplay"] = {
-      delay: 3000,
+      delay: 5000,
     };
   }
 
@@ -159,50 +159,60 @@ const onSlideChange = () => {
     class="CarouselWrapper CarouselWrapper--start overflow-hidden"
   >
     <div class="CarouselWrapper__wrapper swiper-wrapper">
-      <slot></slot>
+      <slot />
     </div>
 
     <Container>
-      <div class="flex items-center justify-end pb-2 mt-8">
-        <button ref="prev" class="CarouselWrapper__prev">
-          <svg
-            data-slot="icon"
-            fill="none"
-            stroke-width="0.3"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            class="rotate-180 h-8 w-8"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15.75 19.5 8.25 12l7.5-7.5"
-            ></path>
-          </svg>
-        </button>
+      <div class="flex items-center justify-between pb-2 mt-8">
+        <div
+          class="flex flex-wrap items-center gap-3 sm:flex-nowrap text-[10px] uppercase pt-2"
+        >
+          <h1 class="font-light leading-7 text-neutral-900">Images</h1>
+          <div class="font-semibold sm:border-l sm:border-neutral-200 sm:pl-3">
+            <span class="text-neutral-600"><slot name="legend" /></span>
+          </div>
+        </div>
+        <div class="flex items-center justify-end">
+          <button ref="prev" class="CarouselWrapper__prev">
+            <svg
+              data-slot="icon"
+              fill="none"
+              stroke-width="0.3"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              class="rotate-180 h-8 w-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5 8.25 12l7.5-7.5"
+              ></path>
+            </svg>
+          </button>
 
-        <div class="w-px border-r border-neutral-300 mt-1 h-8"></div>
+          <div class="w-px border-r border-neutral-300 mt-1 h-8"></div>
 
-        <button ref="next" class="CarouselWrapper__next">
-          <svg
-            data-slot="icon"
-            fill="none"
-            stroke-width="0.3"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            class="h-8 w-8"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="m8.25 4.5 7.5 7.5-7.5 7.5"
-            ></path>
-          </svg>
-        </button>
+          <button ref="next" class="CarouselWrapper__next">
+            <svg
+              data-slot="icon"
+              fill="none"
+              stroke-width="0.3"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              class="h-8 w-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m8.25 4.5 7.5 7.5-7.5 7.5"
+              ></path>
+            </svg>
+          </button>
+        </div>
       </div>
     </Container>
   </div>

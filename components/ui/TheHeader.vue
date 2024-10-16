@@ -86,7 +86,7 @@ watch(
               >
                 <div class="space-y-4">
                   <NuxtLink
-                    :to="{ name: '' }"
+                    :to="{ name: 'projects' }"
                     class="block text-base leading-7 tracking-tight text-gray-700"
                   >
                     Nos projets

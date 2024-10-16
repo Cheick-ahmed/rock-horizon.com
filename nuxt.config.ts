@@ -12,6 +12,10 @@ export default defineNuxtConfig({
           content:
             "945598cbc7bdf306712dedd9c2afadea4ef5da6288cbf586e5b746f991d6042c",
         },
+        {
+          "http-equiv": "cache-control",
+          content: "max-age=604800, must-revalidate",
+        },
       ],
       link: [
         {
@@ -43,7 +47,12 @@ export default defineNuxtConfig({
     },
   ],
 
-  modules: ["@nuxt/image", "@nuxtjs/sitemap", "@nuxtjs/robots"],
+  modules: [
+    "@nuxt/image",
+    "@nuxtjs/sitemap",
+    "@nuxtjs/robots",
+    "nuxt-schema-org",
+  ],
   compatibilityDate: "2024-09-28",
 
   site: {
@@ -57,5 +66,14 @@ export default defineNuxtConfig({
     disallow: ["/404"],
     sitemap: "https://rockhorizon.com/sitemap.xml",
     blockNonSeoBots: true,
+  },
+
+  schemaOrg: {
+    identity: {
+      type: "Organization",
+      name: "Rock Horizon",
+      url: "https://rockhorizon.com",
+      logo: "https://rockhorizon.com/logo.png",
+    },
   },
 });

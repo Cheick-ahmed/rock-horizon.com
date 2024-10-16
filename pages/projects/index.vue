@@ -93,7 +93,5 @@ const features = [
         </div>
       </div>
     </GridPattern>
-
-    <div class="py-16">Holla</div>
   </Container>
 </template>

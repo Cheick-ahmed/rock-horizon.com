@@ -2,18 +2,22 @@
 import { cn } from "~/utils/cn";
 
 defineProps<{
-  src: string;
+  src?: string;
+  alt?: string;
 }>();
 </script>
 
 <template>
   <div :class="cn('w-full overflow-hidden')">
-    <NuxtImg
-      format="webp"
-      loading="lazy"
-      alt=""
-      :src="src"
-      :class="cn('h-full w-full object-cover object-center')"
-    />
+    <slot>
+      <NuxtImg
+        v-if="src"
+        format="webp"
+        loading="lazy"
+        :alt="alt"
+        :src="src"
+        :class="cn('h-full w-full object-cover object-center')"
+      />
+    </slot>
   </div>
 </template>

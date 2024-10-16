@@ -26,7 +26,9 @@
           <div class="mt-1">
             <dt class="sr-only">Phone number</dt>
             <dd>
-              <a href="https://wa.me/+33659022357"> +225 (07) 08 52 18 46 </a>
+              <a class="underline" href="https://wa.me/+33659022357">
+                +225 (07) 08 52 18 46
+              </a>
             </dd>
           </div>
         </dl>
@@ -45,7 +47,9 @@
           <div class="mt-1">
             <dt class="sr-only">Phone number</dt>
             <dd>
-              <a href="https://wa.me/+33659022357"> +33 6 59 02 23 57 </a>
+              <a class="underline" href="https://wa.me/+33659022357">
+                +33 6 59 02 23 57
+              </a>
             </dd>
           </div>
         </dl>

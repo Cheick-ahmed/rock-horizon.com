@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const Links = [
-  { label: "Nos projets", name: "projects-villas-villas-brumes" },
+  { label: "Nos projets", name: "projects" },
   { label: "A propos", name: "about" },
 ];
 

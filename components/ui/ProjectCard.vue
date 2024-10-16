@@ -9,16 +9,8 @@ interface ProjectModel {
 
 const props = defineProps<{
   project: ProjectModel;
-  to: string;
+  to: string | { name: string; params?: Record<string, any> };
 }>();
-
-const resolvedProjectSlug = computed(() => {
-  if (props.project.name && props.project.name === "Villas Brumes") {
-    return "villas-brumes";
-  }
-
-  return "-";
-});
 
 const resolveRoutePath = computed(() => {
   if (props.to && typeof props.to === "object") {
@@ -34,13 +26,13 @@ const resolveRoutePath = computed(() => {
   >
     <Image
       :src="project.image"
-      class="absolute inset-0 -z-10 h-full w-full object-cover"
+      class="absolute inset-0 -z-10 h-full w-full object-cover object-center"
     ></Image>
     <div
       class="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/40"
     ></div>
     <div
-      class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-black-900/10"
+      class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-black"
     ></div>
 
     <div
