@@ -34,16 +34,15 @@ useHead({
     {
       name: "twitter:title",
       content:
-        "Rock-Horizon | Architecture Minimaliste et Immobilier Visionnaire en Côte d'Ivoire",
+        "Rock Horizon | Architecture Minimaliste et Immobilier Visionnaire en Côte d'Ivoire",
     },
     {
       name: "twitter:description",
       content:
-        "Rock-Horizon conçoit des maisons élégantes et modernes dans des lieux inexplorés. Découvrez nos projets immobiliers exclusifs.",
+        "Rock Horizon conçoit des maisons élégantes et modernes dans des lieux inexplorés. Découvrez nos projets immobiliers exclusifs.",
     },
   ],
   link: [
-    { rel: "canonical", href: "https://rockhorizon.com/vefa" },
     { rel: "alternate", hreflang: "fr", href: "https://rockhorizon.com/vefa" },
   ],
 });

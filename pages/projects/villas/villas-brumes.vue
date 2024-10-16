@@ -252,12 +252,6 @@ useHead({
         "Découvrez les Villas Brumes, un projet de trois villas modernes et élégantes nichées dans un cadre naturel préservé.",
     },
   ],
-  link: [
-    {
-      rel: "canonical",
-      href: "https://www.rockhorizon.com/projects/villas/villas-brumes",
-    },
-  ],
 });
 
 useSchemaOrg([

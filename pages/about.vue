@@ -9,7 +9,7 @@ useHead({
     },
     {
       property: "og:title",
-      content: "Rock-Horizon | A propos de nous",
+      content: "Rock Horizon | A propos de nous",
     },
     {
       property: "og:description",
@@ -17,10 +17,9 @@ useHead({
     },
     {
       property: "og:url",
-      content: "https://rock-horizon.com/about",
+      content: "https://rockhorizon.com/about",
     },
   ],
-  link: [{ rel: "canonical", href: "https://rockhorizon.com/about" }],
 });
 
 defineWebPage({
