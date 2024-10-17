@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
     head: {
@@ -50,9 +49,10 @@ export default defineNuxtConfig({
   modules: [
     "@nuxt/image",
     "@nuxtjs/sitemap",
-    "@nuxtjs/robots",
     "nuxt-schema-org",
+    "@nuxtjs/robots",
   ],
+
   compatibilityDate: "2024-09-28",
 
   site: {

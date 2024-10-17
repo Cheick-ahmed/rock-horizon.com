@@ -30,8 +30,7 @@ defineWebPage({
 <template>
   <Container class="py-16">
     <div class="relative isolate">
-      <!-- Header section -->
-      <SectionIntro as="h6" eyebrow="Qui sommes nous ?"> </SectionIntro>
+      <SectionIntro as="h1" eyebrow="Qui sommes nous ?"> </SectionIntro>
       <div>
         <div>
           <p class="[text-wrap:balance] text-lg font-thin lg:text-5xl">

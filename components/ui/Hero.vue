@@ -1,13 +1,7 @@
-<script setup lang="ts">
-const { getLastProject } = useProjects();
-
-const lastProject = getLastProject();
-</script>
-
 <template>
   <div class="relative isolate my-4 lg:my-28 xl:my-0">
     <Container>
-      <div class="max-w-3xl py-10 lg:py-20">
+      <div class="max-w-3xl py-6 lg:py-20">
         <div class="hidden lg:mb-8 lg:flex">
           <div
             class="relative font-base rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-sand hover:ring-sand"
@@ -25,7 +19,7 @@ const lastProject = getLastProject();
         </div>
         <div>
           <h1
-            class="font-base text-6xl font-light tracking-tight text-neutral-950 [text-wrap:balance] lg:text-8xl lg:max-w-2xl"
+            class="font-base text-5xl font-light tracking-tight text-neutral-950 [text-wrap:balance] lg:text-8xl lg:max-w-2xl"
           >
             Redéfinir le Luxe dans des Horizons Inexplorés.
           </h1>

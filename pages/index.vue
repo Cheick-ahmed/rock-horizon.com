@@ -53,7 +53,7 @@ const projects = [
   {
     id: "e3e7897d-9ab8-4cd7-a297-4b7969a848a9",
     image:
-      "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/toumodi/4.jpg",
+      "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/villas_brumes/ext/EXT_77335AD3-C4F0-40BA-B7B1-2BBA421A78CA_10.jpg",
     name: "Villas",
     description:
       "Des espaces raffinés et lumineux, où sérénité et confort s'unissent dans des villas exclusives.",
@@ -133,7 +133,7 @@ defineWebPage({
     <Hero />
 
     <SectionBlock
-      class="bg-gradient-to-b from-white from-50% to-neutral-100 py-32"
+      class="bg-gradient-to-b from-white from-50% to-neutral-100 py-16"
     >
       <Container>
         <SectionIntro eyebrow="Notre vision" class="max-w-6xl">
@@ -218,7 +218,7 @@ defineWebPage({
           <ProjectCard
             class="flex p-px lg:col-span-5"
             :project="projects[0]"
-            to=""
+            to="projects/residences-et-immeubles"
           />
           <ProjectCard
             class="flex p-px lg:col-span-3"

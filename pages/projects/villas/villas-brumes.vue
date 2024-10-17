@@ -216,7 +216,7 @@ useHead({
     {
       name: "description",
       content:
-        "Découvrez les Villas Brumes, un projet exclusif de trois villas modernes et élégantes, nichées dans un cadre naturel préservé. Investissez dans l'immobilier raffiné en Côte d'Ivoire.",
+        "Découvrez les Villas Brumes de Rock Horizon, trois villas minimalistes nichées dans une zone calme à Toumodi, alliant luxe discret, confort, et lumière naturelle.",
     },
     {
       name: "keywords",
@@ -257,7 +257,7 @@ useHead({
 useSchemaOrg([
   {
     "@type": "WebPage",
-    name: "Villas Brumes - Un Refuge d'Élégance et de Sérénité",
+    name: "Villas Brumes : Villas Exclusives et Modernes en Côte d'Ivoire",
     description:
       "Découvrez les Villas Brumes de Rock Horizon, trois villas minimalistes nichées dans une zone calme à Toumodi, alliant luxe discret, confort, et lumière naturelle.",
     url: "https://rockhorizon.com/villas-brumes",
@@ -480,27 +480,34 @@ useSchemaOrg([
       </div>
     </Container>
 
-    <SwiperWrapper
-      v-if="!isMobile"
-      :slides-per-view="1"
-      :effect="true"
-      :autoplay="true"
-    >
-      <template #legend>
-        {{ interiorImages.group }}
-      </template>
+    <div>
+      <SwiperWrapper
+        v-if="!isMobile"
+        :slides-per-view="1"
+        :effect="true"
+        :autoplay="true"
+      >
+        <template #legend>
+          {{ interiorImages.group }}
+        </template>
 
-      <SwiperSlide v-for="picture in interiorImages.pictures" :key="picture.id">
-        <Image
-          :src="picture.imageUrl"
-          :alt="picture.alt"
-          class="aspect-h-8 aspect-w-16"
-        ></Image>
-      </SwiperSlide>
-    </SwiperWrapper>
+        <SwiperSlide
+          v-for="picture in interiorImages.pictures"
+          :key="picture.id"
+        >
+          <Image
+            :src="picture.imageUrl"
+            :alt="picture.alt"
+            class="aspect-h-8 aspect-w-16"
+          ></Image>
+        </SwiperSlide>
+      </SwiperWrapper>
+
+      <Gallerie v-else class="my-20 px-2" />
+    </div>
 
     <Container>
-      <div class="mt-0 sm:mt-16">
+      <div class="mt-16">
         <h3>Présentation des Villas</h3>
         <Border position="top" class="mt-2">
           <div class="pt-6 space-y-4">
@@ -509,9 +516,7 @@ useSchemaOrg([
         </Border>
       </div>
 
-      <Gallerie v-if="isMobile" class="my-20 -mx-2" />
-
-      <SectionBlock class="py-0 px-4 sm:px-0">
+      <SectionBlock class="py-16 px-4 sm:px-0">
         <SectionIntro class="max-w-none">
           <template #title>
             <span class="text-4xl [text-wrap:balance] sm:text-7xl font-[100]">
