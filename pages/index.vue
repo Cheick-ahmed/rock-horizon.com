@@ -45,7 +45,7 @@ const projects = [
   {
     id: "67fdc786-33c2-4ab9-866d-caa6ed2a1e7a",
     image:
-      "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/residence_horizon/RH_EXT_3.jpg",
+      "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/residence_horizon/V1/V1_RESIDENCE-HORIZON_12_309DB2A7-1169-4619-A0B5-67BD508AA29E.jpg",
     name: "Résidences et Immeubles",
     description:
       "Des résidences multifonctionnelles, alliant modernité et investissement durable.",

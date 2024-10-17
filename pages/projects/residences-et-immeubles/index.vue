@@ -1,8 +1,33 @@
 <script setup lang="ts">
+useHead({
+  title: "Résidences Modernes & Immeubles de Luxe en Côte d'Ivoire",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Explorez nos résidences modernes et immeubles élégants en Côte d'Ivoire, conçus par Rock Horizon pour allier confort, innovation architecturale et cadre de vie exceptionnel. Découvrez des projets immobiliers visionnaires.",
+    },
+    {
+      property: "og:title",
+      content:
+        "Rock Horizon | Résidences et Immeubles Modernes en Côte d'Ivoire",
+    },
+    {
+      property: "og:description",
+      content:
+        "Rock Horizon vous présente des résidences et immeubles modernes en Côte d'Ivoire, offrant des espaces de vie raffinés, alliant luxe discret et innovation. Plongez dans nos projets d'exception qui redéfinissent l'immobilier.",
+    },
+    {
+      property: "og:url",
+      content: "https://rockhorizon.com/residences-et-immeubles",
+    },
+  ],
+});
+
 useSchemaOrg([
   {
     "@type": "WebPage",
-    name: "Nos Résidences et Immeubles en Côte d'Ivoire - Rock Horizon",
+    name: "Nos résidences et immeubles en Côte d'Ivoire - Rock Horizon",
     description:
       "Découvrez nos résidences et immeubles modernes en Côte d'Ivoire, conçus pour offrir confort, élégance, et qualité de vie exceptionnelle. Explorez des projets inspirants par Rock Horizon.",
     url: "https://rockhorizon.com/residences-immeubles",
@@ -47,7 +72,7 @@ useSchemaOrg([
           <span
             class="text-4xl font-medium tracking-tight text-neutral-900 sm:text-6xl [text-wrap:balance]"
           >
-            Nos Résidences et Immeubles en Côte d'Ivoire
+            Nos résidences et immeubles en Côte d'Ivoire
           </span>
         </template>
 
@@ -136,7 +161,8 @@ useSchemaOrg([
           </div>
           <div class="flex items-start justify-end lg:order-first">
             <img
-              src="https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/residence_horizon/V1/V1_RESIDENCE-HORIZON_15_819DDDA7-F64B-40D1-993B-6FD940F1FCD7.jpg"
+              loading="lazy"
+              src="https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/residence_horizon/V1/V1_RESIDENCE-HORIZON_12_309DB2A7-1169-4619-A0B5-67BD508AA29E.jpg"
               alt="Product screenshot"
               class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-neutral-400/10 sm:w-[57rem]"
               width="2432"

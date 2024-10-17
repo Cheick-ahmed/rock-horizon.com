@@ -34,11 +34,11 @@
           >
             <Button
               :to="{
-                name: 'projects-villas',
+                name: 'projects',
               }"
               color="base"
             >
-              Explorez Nos Projets
+              Explorez nos Projets
             </Button>
             <Button variant="outline" to="about">En savoir plus</Button>
           </div>
