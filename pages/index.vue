@@ -45,7 +45,7 @@ const projects = [
   {
     id: "67fdc786-33c2-4ab9-866d-caa6ed2a1e7a",
     image:
-      "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/residence_horizon/V1/V1_RESIDENCE-HORIZON_12_309DB2A7-1169-4619-A0B5-67BD508AA29E.jpg",
+      "https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_12_309DB2A7-1169-4619-A0B5-67BD508AA29E.jpg",
     name: "Résidences et Immeubles",
     description:
       "Des résidences multifonctionnelles, alliant modernité et investissement durable.",
@@ -53,7 +53,7 @@ const projects = [
   {
     id: "e3e7897d-9ab8-4cd7-a297-4b7969a848a9",
     image:
-      "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/villas_brumes/ext/EXT_77335AD3-C4F0-40BA-B7B1-2BBA421A78CA_10.jpg",
+      "https://d1tch7ntjva6lz.cloudfront.net/villas_brumes/ext/EXT_77335AD3-C4F0-40BA-B7B1-2BBA421A78CA_10.jpg",
     name: "Villas",
     description:
       "Des espaces raffinés et lumineux, où sérénité et confort s'unissent dans des villas exclusives.",
@@ -61,19 +61,19 @@ const projects = [
   },
   {
     id: "9d802347-8d9a-4bd9-be22-9e1814308985",
-    image: "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/A_5.jpg",
+    image: "https://d1tch7ntjva6lz.cloudfront.net/A_5.jpg",
   },
   {
     id: "eef29cc7-a32d-414f-9622-0b0eb2d0fdeb",
-    image: "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/A_1.jpg",
+    image: "https://d1tch7ntjva6lz.cloudfront.net/A_1.jpg",
   },
   {
     id: "b4feae6c-29c6-4405-8701-13ab7eb754c0",
-    image: "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/A_12.jpg",
+    image: "https://d1tch7ntjva6lz.cloudfront.net/A_12.jpg",
   },
   {
     id: "e3a65c33-b44d-4628-b937-73e084fd3400",
-    image: "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/A_6.jpg",
+    image: "https://d1tch7ntjva6lz.cloudfront.net/A_6.jpg",
   },
 ];
 

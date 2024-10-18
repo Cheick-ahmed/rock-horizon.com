@@ -162,7 +162,7 @@ useSchemaOrg([
           <div class="flex items-start justify-end lg:order-first">
             <img
               loading="lazy"
-              src="https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/residence_horizon/V1/V1_RESIDENCE-HORIZON_12_309DB2A7-1169-4619-A0B5-67BD508AA29E.jpg"
+              src="https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_12_309DB2A7-1169-4619-A0B5-67BD508AA29E.jpg"
               alt="Product screenshot"
               class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-neutral-400/10 sm:w-[57rem]"
               width="2432"

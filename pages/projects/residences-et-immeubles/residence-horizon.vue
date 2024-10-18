@@ -12,37 +12,37 @@ const facadeImages = {
     {
       id: "22a171ff-3a92-40bc-89d3-85f46f191d97",
       imageUrl:
-        "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/residence_horizon/V1/V1_RESIDENCE-HORIZON_12_309DB2A7-1169-4619-A0B5-67BD508AA29E.jpg",
+        "https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_12_309DB2A7-1169-4619-A0B5-67BD508AA29E.jpg",
     },
     {
       id: "64642cf7-1ffb-433d-874b-f64bd33699c9",
       imageUrl:
-        "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/residence_horizon/V1/V1_RESIDENCE-HORIZON_10_E3AA60B7-15AF-4521-9909-B082EAC21DE1.jpg",
+        "https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_10_E3AA60B7-15AF-4521-9909-B082EAC21DE1.jpg",
     },
     {
       id: "4e89a09d-8d91-4223-9257-aac4282b6290",
       imageUrl:
-        "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/residence_horizon/V1/V1_RESIDENCE-HORIZON_15_819DDDA7-F64B-40D1-993B-6FD940F1FCD7.jpg",
+        "https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_15_819DDDA7-F64B-40D1-993B-6FD940F1FCD7.jpg",
     },
     {
       id: "3afb4249-1e74-4322-8044-5ef28232ed07",
       imageUrl:
-        "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/residence_horizon/V1/V1_RESIDENCE-HORIZON_16_934BE48E-84C7-471C-82E9-93B7F05EACD5.jpg",
+        "https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_16_934BE48E-84C7-471C-82E9-93B7F05EACD5.jpg",
     },
     {
       id: "6a2ec32a-8aad-4ee5-b1e0-055a56489675",
       imageUrl:
-        "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/residence_horizon/V1/V1_RESIDENCE-HORIZON_14_4E4AFFD4-6F9B-44A5-8EE4-1CE019A3C30A.jpg",
+        "https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_14_4E4AFFD4-6F9B-44A5-8EE4-1CE019A3C30A.jpg",
     },
     {
       id: "6c5c869b-7e88-4f09-b31b-533aa9e0528b",
       imageUrl:
-        "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/residence_horizon/V1/V1_RESIDENCE-HORIZON_19_C18C22D1-7E3A-4E18-839B-81B8F7FFCF86.jpg",
+        "https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_19_C18C22D1-7E3A-4E18-839B-81B8F7FFCF86.jpg",
     },
     {
       id: "0c2f9bdb-28a7-411c-abf1-f743d07b069a",
       imageUrl:
-        "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/residence_horizon/V1/V1_RESIDENCE-HORIZON_18_3802B1C7-CD45-40AA-8ACD-53DD14630C01.jpg",
+        "https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_18_3802B1C7-CD45-40AA-8ACD-53DD14630C01.jpg",
     },
   ],
 };
@@ -72,49 +72,49 @@ const resolvedImages = [
       {
         id: "edf6bf84-ea18-4505-9297-d03e12803899",
         imageUrl:
-          "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/residence_horizon/V1/V1_RESIDENCE-HORIZON_11_B56227B6-FCE2-4D94-9161-DA5BF3A52276.jpg",
+          "https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_11_B56227B6-FCE2-4D94-9161-DA5BF3A52276.jpg",
         alt: "",
       },
       {
         id: "31169b56-668f-4ab1-9fb9-bc5faab22c30",
         imageUrl:
-          "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/residence_horizon/V1/V1_RESIDENCE-HORIZON_8_1B4DFF27-18B0-426E-BB11-858366F3FCEA.jpg",
+          "https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_8_1B4DFF27-18B0-426E-BB11-858366F3FCEA.jpg",
         alt: "",
       },
       {
         id: "69cac5e8-ad08-4c85-9cfb-40653a4d9ac1",
         imageUrl:
-          "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/residence_horizon/V1/V1_RESIDENCE-HORIZON_5_4E198C06-1999-4C45-8A49-E8543B2D6DC9.jpg",
+          "https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_5_4E198C06-1999-4C45-8A49-E8543B2D6DC9.jpg",
         alt: "",
       },
       {
         id: "174cd89d-0a40-4e1d-b1dc-ff272199abe9",
         imageUrl:
-          "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/residence_horizon/V1/V1_RESIDENCE-HORIZON_17_9A91799A-F630-40B7-A971-B58147469C6D.jpg",
+          "https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_17_9A91799A-F630-40B7-A971-B58147469C6D.jpg",
         alt: "",
       },
       {
         id: "2aeb139f-c9e7-4851-a625-864c60cfdff6",
         imageUrl:
-          "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/residence_horizon/V1/V1_RESIDENCE-HORIZON_9_5571C922-8AE0-4C6E-94BA-268777E5AF5E.jpg",
+          "https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_9_5571C922-8AE0-4C6E-94BA-268777E5AF5E.jpg",
         alt: "",
       },
       {
         id: "b811cf60-4339-498a-8f5a-8f887124ca52",
         imageUrl:
-          "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/residence_horizon/V1/V1_RESIDENCE-HORIZON_2_313B81CA-B2F2-4A20-B50F-99A545D8BBA7.jpg",
+          "https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_2_313B81CA-B2F2-4A20-B50F-99A545D8BBA7.jpg",
         alt: "",
       },
       {
         id: "2a79b267-8a62-4e70-90f5-241ac4fedd83",
         imageUrl:
-          "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/residence_horizon/V1/V1_RESIDENCE-HORIZON_3_463A331C-721D-49C8-9743-4E06CAB2294C.jpg",
+          "https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_3_463A331C-721D-49C8-9743-4E06CAB2294C.jpg",
         alt: "",
       },
       {
         id: "a3e90b58-515e-4a1e-a493-8ae3b1bd6bb6",
         imageUrl:
-          "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/residence_horizon/V1/V1_RESIDENCE-HORIZON_6_AF572389-D0DA-4410-BED8-E752C8FFBD3A.jpg",
+          "https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_6_AF572389-D0DA-4410-BED8-E752C8FFBD3A.jpg",
         alt: "",
       },
     ],
@@ -203,7 +203,7 @@ useHead({
     {
       property: "og:image",
       content:
-        "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/residence_horizon/V1/V1_RESIDENCE-HORIZON_13_40147CC4-5533-40A2-B8C6-94B1EC333A03.jpg",
+        "https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_13_40147CC4-5533-40A2-B8C6-94B1EC333A03.jpg",
     },
     {
       property: "og:image:alt",
@@ -266,7 +266,7 @@ useSchemaOrg([
       </SectionIntro>
     </Container>
 
-    <div class="my-20">
+    <div class="lg:my-12">
       <div class="grid grid-cols-1 gap-y-1 sm:hidden">
         <Image
           v-for="image in facadeImages.pictures"
@@ -377,7 +377,7 @@ useSchemaOrg([
           <Image
             :src="picture.imageUrl"
             :alt="picture.alt"
-            class="aspect-h-5 aspect-w-3"
+            class="aspect-h-3 aspect-w-2"
           ></Image>
         </SwiperSlide>
       </SwiperWrapper>

@@ -24,7 +24,7 @@ const projects = computed(() => {
         features: ["Direct access", "Landscaped garden", "Swimming pool"],
       },
       image_url:
-        "https://s3.eu-west-3.amazonaws.com/front.rockhorizons.com/villas_brumes/ext/EXT_77335AD3-C4F0-40BA-B7B1-2BBA421A78CA_10.jpg",
+        "https://d1tch7ntjva6lz.cloudfront.net/villas_brumes/ext/EXT_77335AD3-C4F0-40BA-B7B1-2BBA421A78CA_10.jpg",
       slug: "villas-brumes",
     },
     {
