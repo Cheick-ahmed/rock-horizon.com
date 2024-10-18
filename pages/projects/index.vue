@@ -1,97 +1,252 @@
 <script setup lang="ts">
-useSeoMeta({
-  title: "Nos projets",
-  ogTitle: "My Amazing Site",
-  description: "This is my amazing site, let me tell you all about it.",
-  ogDescription: "This is my amazing site, let me tell you all about it.",
+useHead({
+  title: "Projets Immobiliers | Résidences, Immeubles & Villas",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Découvrez les projets immobiliers de Rock Horizon : résidences, immeubles et villas. Des espaces uniques, alliant design minimaliste et confort moderne.",
+    },
+    {
+      property: "og:title",
+      content:
+        "Rock Horizon | Projets Immobiliers | Résidences, Immeubles & Villas",
+    },
+    {
+      property: "og:description",
+      content:
+        "Explorez les résidences, immeubles et villas de RockHorizon, conçus pour offrir un cadre de vie élégant, moderne et fonctionnel.",
+    },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:url",
+      content: "https://rockhorizon.com/projects",
+    },
+  ],
 });
 
-const features = [
-  {
-    name: "Adventure-ready",
-    description:
-      "The Drawstring Canister is water and tear resistant with durable canvas construction. This bag holds up to the demands of daily use while keeping your snacks secure.",
-    imageSrc:
-      "https://tailwindui.com/plus/img/ecommerce-images/product-feature-04-detail-03.jpg",
-    imageAlt: "Printed photo of bag being tossed into the sky on top of grass.",
-  },
-  {
-    name: "Minimal and clean",
-    description:
-      "Everything you need, nothing you don't. This bag has the simple, contemporary design that enables you to tell everyone you know about how essentialism is the only rational way to live life.",
-    imageSrc:
-      "https://tailwindui.com/plus/img/ecommerce-images/product-feature-04-detail-01.jpg",
-    imageAlt: "Double stitched black canvas hook loop.",
-  },
-  {
-    name: "Organized",
-    description:
-      "Never lose your snacks again with our patent-pending snack stash pocket system. With dedicated pouches for each of your snacking needs, the Drawstring Canister unlocks new levels of efficiency and convenience.",
-    imageSrc:
-      "https://tailwindui.com/plus/img/ecommerce-images/product-feature-04-detail-02.jpg",
-    imageAlt: "Black canvas body with chrome zipper and key ring.",
-  },
-];
+defineWebPage({
+  "@type": "WebPage",
+});
 </script>
 
 <template>
-  <Container>
-    <GridPattern>
-      <!-- <div
-        v-for="x in 6"
-        class="relative h-full w-full rounded-md bg-white shadow-[0px_0px_0px_1px_rgba(9,9,11,0.07),0px_2px_2px_0px_rgba(9,9,11,0.05)] forced-colors:outline col-span-5"
-      >
-        <div class="text-center py-16">
-          {{ x }}
-        </div>
-      </div> -->
-      <div class="col-span-full py-32">
-        <div class="max-w-2xl">
-          <h1 class="font-semibold text-gray-500">Drawstring Canister</h1>
-          <p
-            class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+  <div class="overflow-hidden bg-white">
+    <Container class="py-16 space-y-20">
+      <SectionIntro class="max-w-3xl">
+        <template #title>
+          <span
+            class="text-4xl font-medium tracking-tight text-neutral-900 sm:text-6xl [text-wrap:balance]"
           >
-            Use it your way
-          </p>
-          <p class="mt-4 text-gray-500">
-            The Drawstring Canister comes with multiple strap and handle options
-            to adapt throughout your day. Shoulder sling it, backpack it, or
-            handy carry it.
-          </p>
-        </div>
+            Nos projets : Résidences, Immeubles et Villas.
+          </span>
+        </template>
 
-        <div
-          class="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16"
-        >
-          <div
-            v-for="feature in features"
-            :key="feature.name"
-            class="flex flex-col-reverse lg:grid lg:grid-cols-[repeat(15,_minmax(0,_1fr))] lg:items-center lg:gap-x-8"
+        <p class="mt-6 text-lg leading-8 text-neutral-600 font-light">
+          Explorez l’ensemble des projets Rock Horizon, comprenant des
+          résidences, immeubles et villas, conçus pour offrir un cadre de vie
+          élégant, moderne et fonctionnel. Que ce soit nos résidences comme
+          <NuxtLink
+            :to="{ name: 'projects-residences-et-immeubles-horizon-prima' }"
+            class="italic underline"
           >
-            <div
-              class="mt-6 lg:mt-0 relative sm:col-span-2 md:col-span-1 lg:col-span-5"
-            >
-              <h3 class="text-lg font-medium text-gray-900">
-                {{ feature.name }}
-              </h3>
-              <p class="mt-2 text-sm text-gray-500">
-                {{ feature.description }}
+            Horizon Prima
+          </NuxtLink>
+          et Horizon Nova, ou nos
+          <NuxtLink
+            :to="{ name: 'projects-villas-villas-brumes' }"
+            class="italic underline"
+          >
+            Villas Brumes</NuxtLink
+          >, chaque projet est pensé pour sublimer l’architecture tout en
+          répondant aux besoins de confort et de bien-être.
+        </p>
+      </SectionIntro>
+
+      <div class="space-y-32 sm:space-y-48">
+        <!-- First project -->
+        <div
+          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+        >
+          <div class="lg:ml-auto lg:pl-4 lg:pt-2">
+            <div class="lg:max-w-lg">
+              <h2 class="text-sm font-thin">01</h2>
+              <p
+                class="mt-2 text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl"
+              >
+                Résidence Horizon
+              </p>
+              <p class="mt-4 text-md leading-8 text-neutral-600">
+                Résidence Horizon vous offre un cadre paisible où modernité et
+                confort se rencontrent, avec des espaces lumineux pensés pour un
+                bien-être absolu.
+              </p>
+              <dl
+                class="mt-6 max-w-xl space-y-4 text-base leading-7 text-neutral-600 lg:max-w-none"
+              >
+                <div>
+                  <dt class="inline font-semibold text-neutral-900">
+                    De grands appartements baignés de lumière naturelle.
+                  </dt>
+                  <dd>
+                    Grâce aux larges baies vitrées, offrant une vue imprenable
+                    et une atmosphère sereine.
+                  </dd>
+                </div>
+                <div>
+                  <dt class="inline font-semibold text-neutral-900">
+                    Espaces verts soigneusement aménagés.
+                  </dt>
+                  <dd>
+                    Parfaits pour se détendre et se ressourcer, loin du tumulte
+                    urbain.
+                  </dd>
+                </div>
+                <div>
+                  <dt class="font-semibold text-neutral-900">
+                    Un design moderne alliant élégance et confort.
+                  </dt>
+                  <dd>
+                    Pensé pour offrir une qualité de vie exceptionnelle à chaque
+                    résident.
+                  </dd>
+                </div>
+              </dl>
+              <p class="mt-8">
+                <NuxtLink
+                  :to="{
+                    name: 'projects-residences-et-immeubles-horizon-prima',
+                  }"
+                  class="inline-flex items-center gap-x-1.5 rounded-md bg-neutral-950 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-neutral-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-600"
+                >
+                  Découvrir en détail
+                  <svg
+                    class="-mr-0.5 h-5 w-5"
+                    fill="none"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                    ></path>
+                  </svg>
+                </NuxtLink>
               </p>
             </div>
-            <div class="flex-auto sm:col-span-2 lg:col-span-10">
+          </div>
+          <div class="flex items-start justify-end lg:order-first">
+            <img
+              loading="lazy"
+              src="https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_12_309DB2A7-1169-4619-A0B5-67BD508AA29E.jpg"
+              alt="Product screenshot"
+              class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-neutral-400/10 sm:w-[57rem]"
+              width="2432"
+              height="1442"
+            />
+          </div>
+        </div>
+
+        <!-- Second Project -->
+
+        <div class="relative">
+          <div
+            class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8"
+          >
+            <div
+              class="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:px-0 lg:py-16"
+            >
+              <div class="lg:max-w-lg">
+                <h2 class="text-sm font-thin">02</h2>
+                <p
+                  class="mt-2 text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl"
+                >
+                  Villas Brumes
+                </p>
+                <p class="mt-4 text-md leading-8 text-neutral-600">
+                  Résidence Horizon vous offre un cadre paisible où modernité et
+                  confort se rencontrent, avec des espaces lumineux pensés pour
+                  un bien-être absolu.
+                </p>
+                <dl
+                  class="mt-6 max-w-xl space-y-4 text-base leading-7 text-neutral-600 lg:max-w-none"
+                >
+                  <div>
+                    <dt class="inline font-semibold text-neutral-900">
+                      De grands appartements baignés de lumière naturelle.
+                    </dt>
+                    <dd>
+                      Grâce aux larges baies vitrées, offrant une vue imprenable
+                      et une atmosphère sereine.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt class="inline font-semibold text-neutral-900">
+                      Espaces verts soigneusement aménagés.
+                    </dt>
+                    <dd>
+                      Parfaits pour se détendre et se ressourcer, loin du
+                      tumulte urbain.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt class="font-semibold text-neutral-900">
+                      Un design moderne alliant élégance et confort.
+                    </dt>
+                    <dd>
+                      Pensé pour offrir une qualité de vie exceptionnelle à
+                      chaque résident.
+                    </dd>
+                  </div>
+                </dl>
+                <p class="mt-8">
+                  <NuxtLink
+                    :to="{
+                      name: 'projects-villas-villas-brumes',
+                    }"
+                    class="inline-flex items-center gap-x-1.5 rounded-md bg-neutral-950 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-neutral-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-600"
+                  >
+                    Découvrir en détail
+                    <svg
+                      class="-mr-0.5 h-5 w-5"
+                      fill="none"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                      ></path>
+                    </svg>
+                  </NuxtLink>
+                </p>
+              </div>
+            </div>
+            <div class="mt-12 sm:mt-16 lg:mt-0">
               <div
-                class="aspect-h-9 aspect-w-16 overflow-hidden rounded-lg bg-gray-100"
+                class="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0"
               >
                 <img
-                  :src="feature.imageSrc"
-                  :alt="feature.imageAlt"
-                  class="object-cover object-center"
+                  class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                  src="https://d1tch7ntjva6lz.cloudfront.net/villas_brumes/ext/FACADE/EXT_E980A702-DEBE-4D14-9C10-A21639D3C43A_2.jpg"
+                  alt="Façade Villas Brumes"
                 />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </GridPattern>
-  </Container>
+    </Container>
+  </div>
 </template>

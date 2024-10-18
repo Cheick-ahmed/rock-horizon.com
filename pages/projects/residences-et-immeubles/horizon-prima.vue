@@ -10,14 +10,14 @@ const facadeImages = {
   group: "Façade",
   pictures: [
     {
-      id: "22a171ff-3a92-40bc-89d3-85f46f191d97",
-      imageUrl:
-        "https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_12_309DB2A7-1169-4619-A0B5-67BD508AA29E.jpg",
-    },
-    {
       id: "64642cf7-1ffb-433d-874b-f64bd33699c9",
       imageUrl:
         "https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_10_E3AA60B7-15AF-4521-9909-B082EAC21DE1.jpg",
+    },
+    {
+      id: "22a171ff-3a92-40bc-89d3-85f46f191d97",
+      imageUrl:
+        "https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_12_309DB2A7-1169-4619-A0B5-67BD508AA29E.jpg",
     },
     {
       id: "4e89a09d-8d91-4223-9257-aac4282b6290",
@@ -179,22 +179,22 @@ const features = [
 ];
 
 useHead({
-  title: "Résidence Horizon – Élégance et Confort en Côte d'Ivoire",
+  title: "Résidence Horizon Prima – Élégance et Confort en Côte d'Ivoire",
   titleTemplate: "",
   meta: [
     {
       name: "description",
       content:
-        "Découvrez Résidence Horizon, une résidence moderne et paisible en Côte d'Ivoire, offrant un cadre de vie exceptionnel alliant élégance, confort et bien-être. Idéal pour les séjours prolongés ou l'investissement immobilier.",
+        "Découvrez Résidence Horizon Prima, une résidence moderne et paisible en Côte d'Ivoire, offrant un cadre de vie exceptionnel alliant élégance, confort et bien-être. Idéal pour les séjours prolongés ou l'investissement immobilier.",
     },
     {
       property: "og:title",
-      content: "RockHorizon | Résidence Horizon",
+      content: "RockHorizon | Résidence Horizon Prima",
     },
     {
       property: "og:description",
       content:
-        "Résidence Horizon est une résidence moderne et paisible en Côte d'Ivoire, offrant un cadre de vie exceptionnel alliant élégance, confort, et bien-être.",
+        "Résidence Horizon Prima est une résidence moderne et paisible en Côte d'Ivoire, offrant un cadre de vie exceptionnel alliant élégance, confort, et bien-être.",
     },
     {
       property: "og:url",
@@ -207,7 +207,7 @@ useHead({
     },
     {
       property: "og:image:alt",
-      content: "Vue d'ensemble de la Résidence Horizon",
+      content: "Vue d'ensemble de la Résidence Horizon Prima",
     },
   ],
 });
@@ -216,9 +216,9 @@ useSchemaOrg([
   {
     "@context": "https://schema.org",
     "@type": "Residence",
-    name: "Résidence Horizon – Élégance et Confort en Côte d'Ivoire",
+    name: "Résidence Horizon Prima – Élégance et Confort en Côte d'Ivoire",
     description:
-      "Résidence Horizon est une résidence moderne et paisible en Côte d'Ivoire, offrant un cadre de vie exceptionnel alliant élégance, confort, et bien-être.",
+      "Résidence Horizon Prima est une résidence moderne et paisible en Côte d'Ivoire, offrant un cadre de vie exceptionnel alliant élégance, confort, et bien-être.",
     url: "https://rockhorizon.com/residences-immeubles/residence-horizon",
     address: {
       "@type": "PostalAddress",
@@ -246,7 +246,7 @@ useSchemaOrg([
   <div class="overflow-hidden">
     <Container>
       <SectionIntro
-        eyebrow="Résidence Horizon"
+        eyebrow="Horizon Prima"
         class="py-20 col-span-full max-w-none font-base"
         as="h1"
       >
@@ -254,13 +254,13 @@ useSchemaOrg([
           <span
             class="block [text-wrap:balance] max-w-4xl text-4xl font-medium sm:text-6xl"
           >
-            Résidence Horizon - Vivre l’élégance et le confort en Côte d'Ivoire.
+            Horizon Prima - Vivre l’élégance et le confort en Côte d'Ivoire.
           </span>
         </template>
         <p class="text-lg max-w-3xl font-extralight">
-          Découvrez Résidence Horizon : un projet immobilier innovant en Côte
-          d’Ivoire, alliant design moderne, confort haut de gamme et cadre de
-          vie exceptionnel. Plongez dans un espace pensé pour redéfinir votre
+          Découvrez Résidence Horizon Prima : un projet immobilier innovant en
+          Côte d’Ivoire, alliant design moderne, confort haut de gamme et cadre
+          de vie exceptionnel. Plongez dans un espace pensé pour redéfinir votre
           quotidien.
         </p>
       </SectionIntro>
@@ -392,9 +392,9 @@ useSchemaOrg([
             class="max-w-4xl"
           >
             <p class="block [text-wrap:balance] text-4xl font-normal">
-              Découvrez les fonctionnalités qui font de la Résidence Horizon un
-              choix incomparable pour un séjour confortable et sans souci,
-              adapté à vos besoins.
+              Découvrez les fonctionnalités qui font de la Résidence Horizon
+              Prima un choix incomparable pour un séjour confortable et sans
+              souci, adapté à vos besoins.
             </p>
           </SectionIntro>
         </div>
