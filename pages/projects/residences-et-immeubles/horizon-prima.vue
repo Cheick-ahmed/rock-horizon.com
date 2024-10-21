@@ -179,65 +179,77 @@ const features = [
 ];
 
 useHead({
-  title: "Résidence Horizon Prima – Élégance et Confort en Côte d'Ivoire",
-  titleTemplate: "",
+  title: "Appartements Haut de Gamme avec Services Premium ",
+  titleTemplate: "Résidence Horizon Prima à Toumodi |",
   meta: [
     {
       name: "description",
       content:
-        "Découvrez Résidence Horizon Prima, une résidence moderne et paisible en Côte d'Ivoire, offrant un cadre de vie exceptionnel alliant élégance, confort et bien-être. Idéal pour les séjours prolongés ou l'investissement immobilier.",
+        "Découvrez la Résidence Horizon Prima à Toumodi, Côte d'Ivoire. Des appartements de luxe et modernes avec des services premium : sécurité 24h/24, flat manager, et internet haut débit.",
+    },
+    {
+      name: "keywords",
+      content:
+        "résidence de luxe, Toumodi, appartements modernes, Côte d'Ivoire, sécurité 24h/24, flat manager, immobilier premium, résidence élégante",
     },
     {
       property: "og:title",
-      content: "RockHorizon | Résidence Horizon Prima",
+      content:
+        "Résidence Horizon Prima | Appartements de Luxe et Modernes à Toumodi, Côte d'Ivoire",
     },
     {
       property: "og:description",
       content:
-        "Résidence Horizon Prima est une résidence moderne et paisible en Côte d'Ivoire, offrant un cadre de vie exceptionnel alliant élégance, confort, et bien-être.",
+        "La Résidence Horizon Prima offre des appartements spacieux, élégants et modernes avec des services haut de gamme à Toumodi.",
     },
     {
       property: "og:url",
-      content: "https://rockhorizon.com/residences-immeubles/residence-horizon",
-    },
-    {
-      property: "og:image",
       content:
-        "https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_13_40147CC4-5533-40A2-B8C6-94B1EC333A03.jpg",
+        "https://www.rockhorizon.com/projects/residences-et-immeubles/horizon-prima",
     },
     {
-      property: "og:image:alt",
-      content: "Vue d'ensemble de la Résidence Horizon Prima",
+      name: "twitter:title",
+      content:
+        "Résidence Horizon Prima | Appartements de Luxe et Modernes à Toumodi, Côte d'Ivoire",
+    },
+    {
+      name: "twitter:description",
+      content:
+        "Découvrez des appartements modernes et luxueux à Toumodi avec des services premium : sécurité 24h/24, flat manager dédié, et internet haut débit.",
     },
   ],
 });
 
-useSchemaOrg([
+defineWebPage([
   {
     "@context": "https://schema.org",
     "@type": "Residence",
-    name: "Résidence Horizon Prima – Élégance et Confort en Côte d'Ivoire",
+    name: "Résidence Horizon Prima",
     description:
-      "Résidence Horizon Prima est une résidence moderne et paisible en Côte d'Ivoire, offrant un cadre de vie exceptionnel alliant élégance, confort, et bien-être.",
-    url: "https://rockhorizon.com/residences-immeubles/residence-horizon",
+      "Appartements de luxe et modernes situés à Toumodi, Côte d'Ivoire, offrant des services premium tels que la sécurité 24h/24 et un flat manager dédié.",
+    url: "https://www.rockhorizon.com/projects/residences-et-immeubles/horizon-prima",
     address: {
       "@type": "PostalAddress",
-      addressCountry: "CI",
       addressLocality: "Toumodi",
-      streetAddress: "Route de Toumodi",
+      addressCountry: "CI",
     },
-    image: "https://rockhorizon.com/images/residence-horizon.jpg",
-    publisher: {
-      "@type": "Organization",
-      name: "Rock Horizon",
-      url: "https://rockhorizon.com",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://rockhorizon.com/logo.png",
-        width: 200,
-        height: 60,
+    amenityFeature: [
+      {
+        "@type": "LocationFeatureSpecification",
+        name: "Sécurité 24h/24",
+        value: true,
       },
-    },
+      {
+        "@type": "LocationFeatureSpecification",
+        name: "Flat Manager dédié",
+        value: true,
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        name: "Internet haut débit",
+        value: true,
+      },
+    ],
   },
 ]);
 </script>
@@ -252,7 +264,7 @@ useSchemaOrg([
       >
         <template #title>
           <span
-            class="block [text-wrap:balance] max-w-4xl text-4xl font-medium sm:text-6xl"
+            class="block [text-wrap:balance] max-w-4xl text-3xl font-medium sm:text-6xl"
           >
             Horizon Prima - Vivre l’élégance et le confort en Côte d'Ivoire.
           </span>
@@ -290,7 +302,7 @@ useSchemaOrg([
       </SwiperWrapper>
     </div>
 
-    <Container>
+    <Container class="my-20 lg:my-28">
       <div>
         <h2>Caractéristiques Techniques</h2>
         <Border position="top" class="mt-2">

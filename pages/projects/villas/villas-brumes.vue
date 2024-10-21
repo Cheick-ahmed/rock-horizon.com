@@ -552,7 +552,7 @@ useSchemaOrg([
         >
           <template #title>
             <span
-              class="block [text-wrap:balance] text-4xl font-medium sm:text-7xl"
+              class="block [text-wrap:balance] text-3xl font-medium sm:text-7xl"
             >
               Villas Brumes
             </span>
@@ -599,7 +599,7 @@ useSchemaOrg([
         <SectionIntro class="max-w-none">
           <template #title>
             <span
-              class="block font-base font-light [text-wrap:balance] text-5xl"
+              class="block font-base text-3xl font-light [text-wrap:balance] sm:text-5xl"
             >
               Avec ses terrasses et ses espaces inondés de lumière, chaque villa
               offre une sensation de liberté absolue, alliant simplicité et

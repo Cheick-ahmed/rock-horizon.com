@@ -1,8 +1,8 @@
 <template>
-  <div class="relative isolate my-4 lg:my-28 xl:my-0">
+  <div class="relative isolate my-4 md:my-28 xl:my-0">
     <Container>
-      <div class="max-w-3xl py-6 lg:py-20">
-        <div class="hidden lg:mb-8 lg:flex">
+      <div class="max-w-3xl py-6 md:py-20">
+        <div class="hidden md:mb-8 md:flex">
           <div
             class="relative font-base rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-sand hover:ring-sand"
           >

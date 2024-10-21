@@ -84,7 +84,7 @@ const carouselOptions = {
 };
 
 useHead({
-  title: "Villas Minimalistes et Projets Innovants en Afrique",
+  title: "Architecture Minimaliste et Immobilier de Prestige en Côte d'Ivoire",
   meta: [
     {
       name: "description",
@@ -99,12 +99,12 @@ useHead({
     {
       property: "og:title",
       content:
-        "RockHorizon | Architecture Minimaliste et Immobilier Visionnaire en Côte d'Ivoire",
+        "Architecture Minimaliste et Immobilier de Prestige en Côte d'Ivoire",
     },
     {
       property: "og:description",
       content:
-        "RockHorizon conçoit des maisons élégantes et modernes dans des lieux inexplorés. Découvrez nos projets immobiliers exclusifs.",
+        "Rock Horizon conçoit des maisons élégantes et modernes dans des lieux inexplorés. Découvrez nos projets immobiliers exclusifs.",
     },
     {
       property: "og:url",
@@ -113,7 +113,7 @@ useHead({
     {
       name: "twitter:title",
       content:
-        "Rock Horizon | Architecture Minimaliste et Immobilier Visionnaire en Côte d'Ivoire",
+        "Architecture Minimaliste et Immobilier de Prestige en Côte d'Ivoire",
     },
     {
       name: "twitter:description",

@@ -77,12 +77,12 @@ defineWebPage({
               <p
                 class="mt-2 text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl"
               >
-                Résidence Horizon
+                Résidence Horizon Prima
               </p>
               <p class="mt-4 text-md leading-8 text-neutral-600">
-                Résidence Horizon vous offre un cadre paisible où modernité et
-                confort se rencontrent, avec des espaces lumineux pensés pour un
-                bien-être absolu.
+                Résidence Horizon Prima vous offre un cadre paisible où
+                modernité et confort se rencontrent, avec des espaces lumineux
+                pensés pour un bien-être absolu.
               </p>
               <dl
                 class="mt-6 max-w-xl space-y-4 text-base leading-7 text-neutral-600 lg:max-w-none"
@@ -120,7 +120,7 @@ defineWebPage({
                   :to="{
                     name: 'projects-residences-et-immeubles-horizon-prima',
                   }"
-                  class="inline-flex items-center gap-x-1.5 rounded-md bg-neutral-950 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-neutral-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-600"
+                  class="inline-flex items-center gap-x-1.5 rounded-md bg-neutral-950 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-neutral-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-600"
                 >
                   Découvrir en détail
                   <svg
@@ -147,7 +147,7 @@ defineWebPage({
               loading="lazy"
               src="https://d1tch7ntjva6lz.cloudfront.net/residence_horizon/V1/V1_RESIDENCE-HORIZON_12_309DB2A7-1169-4619-A0B5-67BD508AA29E.jpg"
               alt="Product screenshot"
-              class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-neutral-400/10 sm:w-[57rem]"
+              class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-neutral-400/10 sm:w-[60rem]"
               width="2432"
               height="1442"
             />
@@ -155,7 +155,6 @@ defineWebPage({
         </div>
 
         <!-- Second Project -->
-
         <div class="relative">
           <div
             class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8"
@@ -211,7 +210,7 @@ defineWebPage({
                     :to="{
                       name: 'projects-villas-villas-brumes',
                     }"
-                    class="inline-flex items-center gap-x-1.5 rounded-md bg-neutral-950 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-neutral-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-600"
+                    class="inline-flex items-center gap-x-1.5 rounded-md bg-neutral-950 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-neutral-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-600"
                   >
                     Découvrir en détail
                     <svg
@@ -238,6 +237,7 @@ defineWebPage({
                 class="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0"
               >
                 <img
+                  loading="lazy"
                   class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                   src="https://d1tch7ntjva6lz.cloudfront.net/villas_brumes/ext/FACADE/EXT_E980A702-DEBE-4D14-9C10-A21639D3C43A_2.jpg"
                   alt="Façade Villas Brumes"
