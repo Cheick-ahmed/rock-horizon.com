@@ -1,19 +1,22 @@
 <script setup lang="ts">
 useHead({
-  title: "A propos de nous",
+  title:
+    "À propos de Rock Horizon | Créateur de Villas de Luxe en Côte d'Ivoire",
   meta: [
     {
       name: "description",
       content:
-        "Découvrez Rock Horizon, créateur de villas de luxe à l'architecture minimaliste en Côte d'Ivoire. Qualité, transparence, et satisfaction client sont au cœur de nos valeurs.",
+        "Découvrez l'histoire de Rock Horizon, créateur de villas de luxe à l'architecture minimaliste en Côte d'Ivoire. Nous prônons qualité, transparence et satisfaction client.",
     },
     {
       property: "og:title",
-      content: "Rock Horizon | A propos de nous",
+      content:
+        "À propos de Rock Horizon | Créateur de Villas de Luxe en Côte d'Ivoire",
     },
     {
       property: "og:description",
-      content: "",
+      content:
+        "Apprenez-en plus sur Rock Horizon, notre mission, nos valeurs et notre engagement pour créer des villas de luxe et des projets immobiliers innovants en Côte d'Ivoire.",
     },
     {
       property: "og:url",
@@ -30,7 +33,9 @@ defineWebPage({
 <template>
   <Container class="py-16">
     <div class="relative isolate">
-      <SectionIntro as="h1" eyebrow="Qui sommes nous ?"> </SectionIntro>
+      <h1 class="mb-3 text-[11px] uppercase font-light text-[#28242B]">
+        Qui sommes nous ?
+      </h1>
       <div>
         <div>
           <p class="[text-wrap:balance] text-lg font-thin lg:text-5xl">

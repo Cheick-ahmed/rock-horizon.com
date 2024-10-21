@@ -1,18 +1,18 @@
 <script setup lang="ts">
 useHead({
   title:
-    "Vente en l'État Futur d'Achèvement (VEFA) en Côte d'Ivoire - Investir avec RockHorizon",
-
+    "Investir en VEFA en Côte d'Ivoire - Achat Immobilier Sécurisé avec RockHorizon",
+  titleTemplate: "",
   meta: [
     {
       name: "description",
       content:
-        "Découvrez comment investir intelligemment en VEFA en Côte d'Ivoire avec RockHorizon. Achetez un bien immobilier sécurisé avec un plan de financement flexible et des garanties solides.",
+        "Découvrez comment investir en toute sécurité avec la VEFA en Côte d'Ivoire grâce à RockHorizon. Bénéficiez de garanties solides et d'un financement flexible pour acquérir votre bien immobilier.",
     },
     {
       name: "keywords",
       content:
-        "VEFA Côte d'Ivoire, Vente en l'État Futur d'Achèvement, investissement immobilier Côte d'Ivoire, RockHorizon, achat immobilier sécurisé, immobilier Afrique",
+        "VEFA Côte d'Ivoire, investissement immobilier sécurisé, RockHorizon, achat immobilier VEFA, immobilier de luxe Afrique",
     },
     {
       property: "og:title",
@@ -21,25 +21,24 @@ useHead({
     {
       property: "og:description",
       content:
-        "Investissez dans un bien immobilier en Côte d'Ivoire avant même sa construction, avec une garantie totale et un plan de paiement échelonné. Découvrez les projets de RockHorizon.",
+        "Investissez en VEFA en Côte d'Ivoire avec RockHorizon : achat sécurisé, garantie totale et plan de financement flexible.",
     },
     {
       property: "og:url",
       content: "https://rockhorizon.com/vefa",
     },
     {
-      name: "og:type",
+      property: "og:type",
       content: "website",
     },
     {
       name: "twitter:title",
-      content:
-        "Rock Horizon | Architecture Minimaliste et Immobilier Visionnaire en Côte d'Ivoire",
+      content: "Investir en VEFA en Côte d'Ivoire - RockHorizon",
     },
     {
       name: "twitter:description",
       content:
-        "Rock Horizon conçoit des maisons élégantes et modernes dans des lieux inexplorés. Découvrez nos projets immobiliers exclusifs.",
+        "Découvrez comment RockHorizon sécurise votre investissement en VEFA avec des garanties solides et un plan de financement flexible.",
     },
   ],
   link: [
@@ -50,9 +49,9 @@ useHead({
 useSchemaOrg([
   {
     "@type": "WebPage",
-    name: "Vente en l'État Futur d'Achèvement (VEFA) - Investir avec RockHorizon en Côte d'Ivoire",
+    name: "Investir en VEFA en Côte d'Ivoire - Achat Immobilier Sécurisé avec RockHorizon",
     description:
-      "Découvrez comment investir intelligemment en VEFA en Côte d'Ivoire avec RockHorizon. Achetez un bien immobilier sécurisé avec un plan de financement flexible et des garanties solides.",
+      "Découvrez comment investir en toute sécurité en VEFA en Côte d'Ivoire avec RockHorizon. Bénéficiez de garanties solides et d'un plan de financement flexible.",
     url: "https://rockhorizon.com/vefa",
     inLanguage: "fr",
     publisher: {

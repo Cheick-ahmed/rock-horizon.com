@@ -36,7 +36,7 @@ defineWebPage({
 <template>
   <div class="overflow-hidden bg-white">
     <Container class="py-16 space-y-20">
-      <SectionIntro class="max-w-3xl">
+      <SectionIntro as="h1" class="max-w-3xl">
         <template #title>
           <span
             class="text-4xl font-medium tracking-tight text-neutral-900 sm:text-6xl [text-wrap:balance]"

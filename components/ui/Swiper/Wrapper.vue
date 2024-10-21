@@ -167,7 +167,7 @@ const onSlideChange = () => {
         <div
           class="flex flex-wrap items-center gap-3 sm:flex-nowrap text-[10px] uppercase pt-2"
         >
-          <h1 class="font-light leading-7 text-neutral-900">Images</h1>
+          <h2 class="font-light leading-7 text-neutral-900">Images</h2>
           <div class="font-semibold sm:border-l sm:border-neutral-200 sm:pl-3">
             <span class="text-neutral-600"><slot name="legend" /></span>
           </div>

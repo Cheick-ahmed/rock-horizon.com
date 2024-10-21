@@ -386,45 +386,42 @@ const faqList = [
 ];
 
 useHead({
-  title: "Villas Brumes : Villas Exclusives et Modernes en Côte d'Ivoire",
-  titleTemplate: "",
+  title: "Villas Exclusives avec Piscine et Jardin à Toumodi, Côte d'Ivoire",
+  titleTemplate: "Villas Brumes |",
   meta: [
     {
       name: "description",
       content:
-        "Découvrez les Villas Brumes de Rock Horizon, trois villas minimalistes nichées dans une zone calme à Toumodi, alliant luxe discret, confort, et lumière naturelle.",
+        "Découvrez les Villas Brumes à Toumodi : des villas exclusives avec piscine et jardin, vendues en VEFA. Luxe moderne, personnalisation et confort premium.",
     },
     {
       name: "keywords",
       content:
-        "villas modernes Côte d'Ivoire, villas minimalistes, villas de luxe, immobilier exclusif, architecture raffinée",
+        "villas exclusives, Toumodi, Côte d'Ivoire, VEFA, piscines privées, jardins privés, immobilier de luxe, villas modernes",
     },
     {
       property: "og:title",
-      content: "Villas Brumes | Villas Modernes et Exclusives en Côte d'Ivoire",
+      content:
+        "Villas Brumes | Villas Exclusives avec Piscine et Jardin à Toumodi",
     },
     {
       property: "og:description",
       content:
-        "Découvrez les Villas Brumes, un projet de trois villas modernes et élégantes nichées dans un cadre naturel préservé.",
-    },
-    {
-      property: "og:image",
-      content: "https://d1tch7ntjva6lz.cloudfront.net/toumodi/4.jpg",
+        "Les Villas Brumes à Toumodi offrent des espaces luxueux avec piscine et jardin, vendues en VEFA, alliant confort moderne et personnalisation.",
     },
     {
       property: "og:url",
-      content:
-        "https://rockhorizon.com/projects/ff361243-30f7-4935-b750-10ea1a7bd583",
+      content: "https://www.rockhorizon.com/projects/villas/villas-brumes",
     },
     {
       name: "twitter:title",
-      content: "Villas Brumes | Villas Modernes et Exclusives en Côte d'Ivoire",
+      content:
+        "Villas Brumes | Villas Exclusives avec Piscine et Jardin à Toumodi",
     },
     {
       name: "twitter:description",
       content:
-        "Découvrez les Villas Brumes, un projet de trois villas modernes et élégantes nichées dans un cadre naturel préservé.",
+        "Découvrez les Villas Brumes, des villas modernes à Toumodi avec piscine et jardin, vendues en VEFA pour un achat sécurisé et personnalisé.",
     },
   ],
 });

@@ -5,7 +5,7 @@ useHead({
     {
       name: "description",
       content:
-        "Explorez nos résidences modernes et immeubles élégants en Côte d'Ivoire, conçus par Rock Horizon pour allier confort, innovation architecturale et cadre de vie exceptionnel. Découvrez des projets immobiliers visionnaires.",
+        "Découvrez nos résidences modernes et immeubles de luxe en Côte d'Ivoire. Rock Horizon allie confort, innovation architecturale et cadre de vie exceptionnel.",
     },
     {
       property: "og:title",
@@ -15,7 +15,7 @@ useHead({
     {
       property: "og:description",
       content:
-        "Rock Horizon vous présente des résidences et immeubles modernes en Côte d'Ivoire, offrant des espaces de vie raffinés, alliant luxe discret et innovation. Plongez dans nos projets d'exception qui redéfinissent l'immobilier.",
+        "Rock Horizon propose des résidences et immeubles modernes en Côte d'Ivoire, alliant luxe discret, innovation et cadre de vie exceptionnel.",
     },
     {
       property: "og:url",
@@ -27,9 +27,9 @@ useHead({
 useSchemaOrg([
   {
     "@type": "WebPage",
-    name: "Nos résidences et immeubles en Côte d'Ivoire - Rock Horizon",
+    name: "Résidences et Immeubles de Luxe en Côte d'Ivoire - Rock Horizon",
     description:
-      "Découvrez nos résidences et immeubles modernes en Côte d'Ivoire, conçus pour offrir confort, élégance, et qualité de vie exceptionnelle. Explorez des projets inspirants par Rock Horizon.",
+      "Découvrez nos résidences modernes et immeubles de luxe en Côte d'Ivoire, alliant confort, élégance et qualité de vie exceptionnelle. Explorez les projets Rock Horizon.",
     url: "https://rockhorizon.com/residences-immeubles",
     publisher: {
       "@type": "Organization",
@@ -67,7 +67,7 @@ useSchemaOrg([
 <template>
   <div class="overflow-hidden bg-white">
     <Container class="py-16 space-y-20">
-      <SectionIntro class="max-w-3xl">
+      <SectionIntro as="h1" class="max-w-3xl">
         <template #title>
           <span
             class="text-4xl font-medium tracking-tight text-neutral-900 sm:text-6xl [text-wrap:balance]"

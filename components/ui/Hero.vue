@@ -1,7 +1,7 @@
 <template>
-  <div class="relative isolate my-4 md:my-28 xl:my-0">
+  <div class="relative isolate">
     <Container>
-      <div class="max-w-3xl py-6 md:py-20">
+      <div class="max-w-3xl py-28">
         <div class="hidden md:mb-8 md:flex">
           <div
             class="relative font-base rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-sand hover:ring-sand"
@@ -38,7 +38,7 @@
               }"
               color="base"
             >
-              Explorez nos Projets
+              Explorez nos projets
             </Button>
             <Button variant="outline" to="about">En savoir plus</Button>
           </div>

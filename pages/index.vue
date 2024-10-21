@@ -89,7 +89,7 @@ useHead({
     {
       name: "description",
       content:
-        "Découvrez Rock Horizon, créateur de villas de luxe à l'architecture minimaliste en Côte d'Ivoire. Qualité, transparence, et satisfaction client sont au cœur de nos valeurs.",
+        "Découvrez Rock Horizon, créateur de villas de luxe à l'architecture minimaliste en Côte d'Ivoire. Transparence et satisfaction client au cœur de nos valeurs.",
     },
     {
       name: "keywords",
