@@ -179,8 +179,9 @@ const features = [
 ];
 
 useHead({
-  title: "Appartements Haut de Gamme avec Services Premium ",
-  titleTemplate: "Résidence Horizon Prima à Toumodi |",
+  title:
+    "Appartements Haut de Gamme avec Services Premium à Toumodi, Côte d'Ivoire",
+  titleTemplate: "",
   meta: [
     {
       name: "description",

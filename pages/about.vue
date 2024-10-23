@@ -1,7 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "À propos de Rock Horizon | Créateur de Villas de Luxe en Côte d'Ivoire",
+  title: "Créateur de Villas de Luxe en Côte d'Ivoire",
   meta: [
     {
       name: "description",
@@ -10,8 +9,7 @@ useHead({
     },
     {
       property: "og:title",
-      content:
-        "À propos de Rock Horizon | Créateur de Villas de Luxe en Côte d'Ivoire",
+      content: "Créateur de Villas de Luxe en Côte d'Ivoire",
     },
     {
       property: "og:description",

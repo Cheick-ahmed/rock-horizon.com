@@ -1,6 +1,7 @@
 <script setup lang="ts">
 useHead({
   title: "Résidences Modernes & Immeubles de Luxe en Côte d'Ivoire",
+  titleTemplate: "",
   meta: [
     {
       name: "description",
@@ -9,8 +10,7 @@ useHead({
     },
     {
       property: "og:title",
-      content:
-        "Rock Horizon | Résidences et Immeubles Modernes en Côte d'Ivoire",
+      content: "Résidences et Immeubles Modernes en Côte d'Ivoire",
     },
     {
       property: "og:description",

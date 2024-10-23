@@ -387,7 +387,7 @@ const faqList = [
 
 useHead({
   title: "Villas Exclusives avec Piscine et Jardin à Toumodi, Côte d'Ivoire",
-  titleTemplate: "Villas Brumes |",
+  titleTemplate: "",
   meta: [
     {
       name: "description",
@@ -401,8 +401,7 @@ useHead({
     },
     {
       property: "og:title",
-      content:
-        "Villas Brumes | Villas Exclusives avec Piscine et Jardin à Toumodi",
+      content: "Villas Exclusives avec Piscine et Jardin à Toumodi",
     },
     {
       property: "og:description",
@@ -415,8 +414,7 @@ useHead({
     },
     {
       name: "twitter:title",
-      content:
-        "Villas Brumes | Villas Exclusives avec Piscine et Jardin à Toumodi",
+      content: "Villas Exclusives avec Piscine et Jardin à Toumodi",
     },
     {
       name: "twitter:description",

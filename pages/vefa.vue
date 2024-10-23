@@ -1,7 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Investir en VEFA en Côte d'Ivoire - Achat Immobilier Sécurisé avec RockHorizon",
+  title: "Investir en VEFA en Côte d'Ivoire",
   titleTemplate: "",
   meta: [
     {
@@ -16,7 +15,7 @@ useHead({
     },
     {
       property: "og:title",
-      content: "Investir en VEFA en Côte d'Ivoire avec RockHorizon",
+      content: "Investir en VEFA en Côte d'Ivoire",
     },
     {
       property: "og:description",
@@ -33,7 +32,7 @@ useHead({
     },
     {
       name: "twitter:title",
-      content: "Investir en VEFA en Côte d'Ivoire - RockHorizon",
+      content: "Investir en VEFA en Côte d'Ivoire",
     },
     {
       name: "twitter:description",

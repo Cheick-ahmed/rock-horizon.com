@@ -84,7 +84,7 @@ const carouselOptions = {
 };
 
 useHead({
-  title: "Architecture Minimaliste et Immobilier de Prestige en Côte d'Ivoire",
+  title: "Immobilier de Prestige en Côte d'Ivoire",
   meta: [
     {
       name: "description",
@@ -98,8 +98,7 @@ useHead({
     },
     {
       property: "og:title",
-      content:
-        "Architecture Minimaliste et Immobilier de Prestige en Côte d'Ivoire",
+      content: "Immobilier de Prestige en Côte d'Ivoire",
     },
     {
       property: "og:description",
@@ -112,8 +111,7 @@ useHead({
     },
     {
       name: "twitter:title",
-      content:
-        "Architecture Minimaliste et Immobilier de Prestige en Côte d'Ivoire",
+      content: "Immobilier de Prestige en Côte d'Ivoire",
     },
     {
       name: "twitter:description",
