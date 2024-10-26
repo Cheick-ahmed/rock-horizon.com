@@ -94,7 +94,7 @@ useSchemaOrg([
               <p
                 class="mt-2 text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl"
               >
-                Résidence Horizon
+                Résidence Horizon Prima
               </p>
               <p class="mt-4 text-md leading-8 text-neutral-600">
                 Résidence Horizon vous offre un cadre paisible où modernité et
