@@ -448,7 +448,7 @@ useSchemaOrg([
     "@type": "Product",
     name: "Villa B165",
     description:
-      "Villa B165 de 165 m² située à Toumodi, offrant luxe discret et espaces inondés de lumière. Prix : 47.000.000 FCFA.",
+      "Villa B165 de 165 m² située à Toumodi, offrant luxe discret et espaces inondés de lumière. Prix : 42.000.000 FCFA.",
     image: "https://rockhorizon.com/images/villa-b165.jpg",
     brand: {
       "@type": "Brand",
