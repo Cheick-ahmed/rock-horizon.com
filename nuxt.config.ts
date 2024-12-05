@@ -29,6 +29,7 @@ export default defineNuxtConfig({
       mode: "out-in",
     },
   },
+
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
 
@@ -74,6 +75,12 @@ export default defineNuxtConfig({
       name: "Rock Horizon",
       url: "https://rockhorizon.com",
       logo: "https://rockhorizon.com/logo.png",
+    },
+  },
+
+  runtimeConfig: {
+    app: {
+      META_PIXEL_ID: "",
     },
   },
 });
