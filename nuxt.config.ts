@@ -23,6 +23,20 @@ export default defineNuxtConfig({
           href: "/favicon.png",
         },
       ],
+      script: [
+        {
+          src: "https://plausible.io/js/script.outbound-links.pageview-props.tagged-events.js",
+          defer: true,
+          "data-domain": "rockhorizon.com",
+        },
+        {
+          children: `
+            window.plausible = window.plausible || function() {
+              (window.plausible.q = window.plausible.q || []).push(arguments)
+            }
+          `,
+        },
+      ],
     },
     pageTransition: {
       name: "page",
@@ -52,6 +66,7 @@ export default defineNuxtConfig({
     "@nuxtjs/sitemap",
     "nuxt-schema-org",
     "@nuxtjs/robots",
+    "@nuxtjs/plausible",
   ],
 
   compatibilityDate: "2024-09-28",
@@ -79,8 +94,15 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
+    public: {
+      PLAUSIBLE_DOMAIN: "",
+    },
     app: {
       META_PIXEL_ID: "",
     },
+  },
+
+  plausible: {
+    ignoredHostnames: ["localhost"],
   },
 });
