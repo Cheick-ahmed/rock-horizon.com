@@ -1,5 +1,10 @@
 <script setup lang="ts">
-import { useRoute } from "vue-router";
+import { ref } from "vue";
+
+import ContactModal from "~/components/ui/ContactModal.vue";
+import { useModalManager } from "~/composables/useModalManager";
+
+const { openModal } = useModalManager();
 
 const mobileMenuOpened = ref(false);
 const route = useRoute();
@@ -10,6 +15,10 @@ watch(
     mobileMenuOpened.value = false;
   }
 );
+
+function showContactModal() {
+  openModal(ContactModal, { title: "Contact Us" });
+}
 </script>
 
 <template>
@@ -22,7 +31,7 @@ watch(
             class="-m-1.5 p-1.5"
             aria-label="Home"
           >
-            <span class="sr-only">Your Company</span>
+            <span class="sr-only">Rock Horizon</span>
 
             <Logo class="h-6 w-auto" />
           </NuxtLink>
@@ -101,7 +110,12 @@ watch(
               </div>
             </template>
           </div>
-          <Button variant="solid" color="base" class="hidden lg:block">
+          <Button
+            variant="solid"
+            color="base"
+            class="hidden lg:block"
+            @click="showContactModal"
+          >
             Nous contacter
           </Button>
         </div>

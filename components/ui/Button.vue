@@ -13,6 +13,8 @@ interface ButtonProps {
   href?: string;
 }
 
+const buttonRef = ref<HTMLButtonElement>();
+
 const props = withDefaults(defineProps<ButtonProps>(), {
   variant: "solid",
   color: "neutral",
@@ -20,9 +22,9 @@ const props = withDefaults(defineProps<ButtonProps>(), {
 
 const baseStyles = {
   solid:
-    "inline-flex justify-center rounded-lg px-4 py-3  text-sm font-semibold outline-2 outline-offset-2 transition-colors",
+    "inline-flex justify-center rounded-lg px-4 py-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2",
   outline:
-    "inline-flex justify-center rounded-lg border py-[calc(theme(spacing.3)-1px)] px-[calc(theme(spacing.4)-1px)] text-sm outline-2 outline-offset-2 transition-colors",
+    "inline-flex justify-center rounded-lg border py-[calc(theme(spacing.3)-1px)] px-[calc(theme(spacing.4)-1px)] text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2",
 };
 
 const variantStyles = {
@@ -31,13 +33,13 @@ const variantStyles = {
     white:
       "bg-white text-cyan-900 hover:bg-white/90 active:bg-white/90 active:text-cyan-900/70",
     neutral:
-      "bg-neutral-800 text-white hover:bg-neutral-900 active:bg-neutral-800 active:text-white/80",
-    base: "bg-[#D4AF37] text-white hover:bg-[#D4AF37] active:bg-[#D4AF37] active:text-white/80",
+      "bg-neutral-800 text-white hover:bg-neutral-900 active:bg-neutral-800 active:text-white/80 focus-visible:outline-neutral-900",
+    base: "bg-[#D4AF37] text-white hover:bg-[#D4AF37] active:bg-[#D4AF37] active:text-white/80 focus-visible:outline-[#D4AF37]",
   },
   outline: {
     neutral:
-      "border-neutral-300 text-neutral-700 hover:border-neutral-400 active:bg-neutral-100 active:text-neutral-700/80",
-    base: "border-[#D4AF37] text-neutral-700 hover:border-[#D4AF37] active:bg-[#D4AF37]  active:text-neutral-700/80",
+      "border-neutral-300 text-neutral-700 hover:border-neutral-400 active:bg-neutral-100 active:text-neutral-700/80 focus-visible:outline-neutral-300",
+    base: "border-[#D4AF37] text-neutral-700 hover:border-[#D4AF37] active:bg-[#D4AF37] active:text-neutral-700/80",
   },
 };
 
@@ -58,6 +60,10 @@ const resolveRoutePath = computed(() => {
   }
   return { to: props.to };
 });
+
+function clicked() {
+  console.log("🚀 ~ clicked ~ ():");
+}
 </script>
 
 <template>
@@ -67,7 +73,7 @@ const resolveRoutePath = computed(() => {
     </NuxtLink>
   </template>
   <template v-else>
-    <button :class="computedClass">
+    <button ref="buttonRef" @click.prevent="clicked" :class="computedClass">
       <slot />
     </button>
   </template>

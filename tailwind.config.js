@@ -36,6 +36,7 @@ export default {
           DEFAULT: '#D4AF37', 
           dark: '#C49A2C',   
         },
+        "light-overlay-color": 'hsl(var(--light-overlay-color))',
       },
       aspectRatio: {
         '4/3': '4 / 3',

@@ -1,0 +1,20 @@
+<script setup lang="ts">
+const modelValue = defineModel();
+
+defineProps<{
+  id: string;
+  name: string;
+  autocomplete?: string;
+}>();
+</script>
+
+<template>
+  <input
+    type="text"
+    :id="id"
+    v-bind="$attrs"
+    :autocomplete="autocomplete"
+    v-model="modelValue"
+    class="block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 sm:text-sm/6"
+  />
+</template>

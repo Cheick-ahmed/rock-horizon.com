@@ -34,6 +34,8 @@ fbq('track', 'PageView');`,
 
   <TheFooter />
 
+  <BaseModal />
+
   <noscript v-if="isProd">
     <img
       height="1"
